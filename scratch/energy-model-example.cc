@@ -92,9 +92,9 @@ private:
     /// Simulation time, seconds
     double totalTime;
     /// Socket port
-    uint32_t port;
+    uint32_t port=9;
     /// Packet aux
-    uint32_t bytesTotal;
+    uint32_t bytesTotal=0;
     /// Packet size
     std::string packetSize;
     /// Data rate
@@ -127,14 +127,12 @@ private:
 };
 
 RoutingExperiment::RoutingExperiment()
-: nWifis(70),
-totalTime(120.0),
-port(9),
-bytesTotal(0),
+: nWifis(10),
+totalTime(60.0),
 packetSize("512"),
 rate("2048bps"),
 m_CSVfileName("manet-routing.output.csv"),
-nSinks(10), //cant nodos tx
+nSinks(5), //cant nodos tx
 m_txp(7.5),
 m_traceMobility(false),
 nodePause(2), //2 seg
@@ -153,7 +151,7 @@ RoutingExperiment::ReceivePacket(Ptr<Socket> socket) {
     while ((packet = socket->RecvFrom(senderAddress))) {
         bytesTotal += packet->GetSize();
         packetsReceived += 1;
-        NS_LOG_UNCOND(PrintReceivedPacket(socket, packet, senderAddress));
+       // NS_LOG_UNCOND(PrintReceivedPacket(socket, packet, senderAddress));
     }
 }
 
@@ -177,27 +175,25 @@ void
 RoutingExperiment::CheckThroughput() {
     double kbs = (bytesTotal * 8.0) / 1000;
     bytesTotal = 0;
-    double energyConsumed = 0;
-    double remainingEnergy = 0;
+//    double energyConsumed = 0;
+//    double remainingEnergy = 0;
 
     std::ofstream out(m_CSVfileName.c_str(), std::ios::app);
 
-    for (int i = 0; i < nWifis; i++) {
+//    for (int i = 0; i < nWifis; i++) {
+//
+//        Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (sources.Get(i));
+//        remainingEnergy += basicSourcePtr->GetRemainingEnergy();
+//
+//        Ptr<DeviceEnergyModel> basicRadioModelPtr =
+//                (basicSourcePtr->FindDeviceEnergyModels("ns3::WifiRadioEnergyModel")).Get(0);
+//        NS_ASSERT(basicRadioModelPtr != NULL);
+//        energyConsumed += basicRadioModelPtr->GetTotalEnergyConsumption();
+//    }
 
-        Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (sources.Get(i));
-        remainingEnergy += basicSourcePtr->GetRemainingEnergy();
-
-        Ptr<DeviceEnergyModel> basicRadioModelPtr =
-                (basicSourcePtr->FindDeviceEnergyModels("ns3::WifiRadioEnergyModel")).Get(0);
-        NS_ASSERT(basicRadioModelPtr != NULL);
-        energyConsumed += basicRadioModelPtr->GetTotalEnergyConsumption();
-    }
-
-
-
-
-    NS_LOG_UNCOND("Consumo en segundo " << Simulator::Now().GetSeconds() << ": " << energyConsumed);
-    NS_LOG_UNCOND("Energia residual  " << Simulator::Now().GetSeconds() << ": " << remainingEnergy);
+   // NS_LOG_UNCOND("Consumo en segundo " << Simulator::Now().GetSeconds() << ": " << energyConsumed);
+   // NS_LOG_UNCOND("Energia residual  " << Simulator::Now().GetSeconds() << ": " << remainingEnergy);
+    NS_LOG_UNCOND("SECOND: "<< Simulator::Now().GetSeconds());
 
     out << (Simulator::Now()).GetSeconds() << ","
             << kbs << ","
@@ -205,14 +201,14 @@ RoutingExperiment::CheckThroughput() {
             << nWifis << ","
             << nSinks << ","
             << m_txp << ","
-            << nodePause << ","
-            << (energyConsumed - energyConsumed_old_aux) << ","
-            << remainingEnergy
+            << nodePause 
+//            << (energyConsumed - energyConsumed_old_aux) << ","
+//            << remainingEnergy
             << std::endl;
 
     out.close();
     packetsReceived = 0;
-    energyConsumed_old_aux = energyConsumed;
+//    energyConsumed_old_aux = energyConsumed;
     Simulator::Schedule(Seconds(1.0), &RoutingExperiment::CheckThroughput, this);
 }
 
@@ -309,7 +305,6 @@ RoutingExperiment::Run() {
 
     NS_LOG_INFO("Run Simulation.");
     CheckThroughput();
-
 
     /** simulation setup **/
     Simulator::Stop(Seconds(totalTime));
