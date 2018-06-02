@@ -134,7 +134,7 @@ bytesTotal(0),
 packetSize("512"),
 rate("2048bps"),
 m_CSVfileName("manet-routing.output.csv"),
-nSinks(20), //cant nodos tx
+nSinks(10), //cant nodos tx
 m_txp(7.5),
 m_traceMobility(false),
 nodePause(2), //2 seg
@@ -202,6 +202,7 @@ RoutingExperiment::CheckThroughput() {
     out << (Simulator::Now()).GetSeconds() << ","
             << kbs << ","
             << packetsReceived << ","
+            << nWifis << ","
             << nSinks << ","
             << m_txp << ","
             << nodePause << ","
@@ -265,6 +266,7 @@ main(int argc, char *argv[]) {
     out << "SimulationSecond," <<
             "ReceiveRate," <<
             "PacketsReceived," <<
+            "NumberOfNodes," <<
             "NumberOfSinks," <<
             "RoutingProtocol," <<
             "TransmissionPower," <<
@@ -348,7 +350,7 @@ RoutingExperiment::Run() {
 void
 RoutingExperiment::CreateNodes() {
     std::cout << "Creating " << (unsigned) nWifis << " nodes .\n";
-    std::cout << nSinks << " nodes will move and transmit .\n";
+    std::cout << nSinks << " nodes will receive.\n";
 
     adhocNodes.Create(nWifis);
     // Name nodes
@@ -452,7 +454,7 @@ RoutingExperiment::InstallApplications() {
         onoff1.SetAttribute("Remote", remoteAddress);
 
         Ptr<UniformRandomVariable> var = CreateObject<UniformRandomVariable> ();
-        ApplicationContainer temp = onoff1.Install(adhocNodes.Get(i + nWifis - c_nSink));
+        ApplicationContainer temp = onoff1.Install(adhocNodes.Get(i + c_nSink));
         temp.Start(Seconds(var->GetValue(0.0, 1.0)));
         temp.Stop(Seconds(totalTime));
     }
