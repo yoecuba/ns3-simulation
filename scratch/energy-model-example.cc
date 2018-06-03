@@ -92,9 +92,9 @@ private:
     /// Simulation time, seconds
     double totalTime;
     /// Socket port
-    uint32_t port=9;
+    uint32_t port = 9;
     /// Packet aux
-    uint32_t bytesTotal=0;
+    uint32_t bytesTotal = 0;
     /// Packet size
     std::string packetSize;
     /// Data rate
@@ -104,7 +104,7 @@ private:
     /// CSV File Name
     std::string m_CSVfileName;
     /// Sinks nodes 
-    int nSinks=10;
+    int nSinks = 10;
     /// Transmission power
     double m_txp;
     /// True if tracing mobility
@@ -174,41 +174,41 @@ void
 RoutingExperiment::CheckThroughput() {
     double kbs = (bytesTotal * 8.0) / 1000;
     bytesTotal = 0;
-//    double energyConsumed = 0;
-//    double remainingEnergy = 0;
+    //    double energyConsumed = 0;
+    //    double remainingEnergy = 0;
 
     std::ofstream out(m_CSVfileName.c_str(), std::ios::app);
 
-//    for (int i = 0; i < nWifis; i++) {
-//
-//        Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (sources.Get(i));
-//        remainingEnergy += basicSourcePtr->GetRemainingEnergy();
-//
-//        Ptr<DeviceEnergyModel> basicRadioModelPtr =
-//                (basicSourcePtr->FindDeviceEnergyModels("ns3::WifiRadioEnergyModel")).Get(0);
-//        NS_ASSERT(basicRadioModelPtr != NULL);
-//        energyConsumed += basicRadioModelPtr->GetTotalEnergyConsumption();
-//    }
+    //    for (int i = 0; i < nWifis; i++) {
+    //
+    //        Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (sources.Get(i));
+    //        remainingEnergy += basicSourcePtr->GetRemainingEnergy();
+    //
+    //        Ptr<DeviceEnergyModel> basicRadioModelPtr =
+    //                (basicSourcePtr->FindDeviceEnergyModels("ns3::WifiRadioEnergyModel")).Get(0);
+    //        NS_ASSERT(basicRadioModelPtr != NULL);
+    //        energyConsumed += basicRadioModelPtr->GetTotalEnergyConsumption();
+    //    }
 
-   // NS_LOG_UNCOND("Consumo en segundo " << Simulator::Now().GetSeconds() << ": " << energyConsumed);
-   // NS_LOG_UNCOND("Energia residual  " << Simulator::Now().GetSeconds() << ": " << remainingEnergy);
+    // NS_LOG_UNCOND("Consumo en segundo " << Simulator::Now().GetSeconds() << ": " << energyConsumed);
+    // NS_LOG_UNCOND("Energia residual  " << Simulator::Now().GetSeconds() << ": " << remainingEnergy);
 
-    NS_LOG_UNCOND("SECOND: "<< Simulator::Now().GetSeconds());
-    
+    NS_LOG_UNCOND("SECOND: " << Simulator::Now().GetSeconds());
+
     out << (Simulator::Now()).GetSeconds() << ","
             << kbs << ","
             << packetsReceived << ","
             << nWifis << ","
             << nSinks << ","
             << m_txp << ","
-            << nodePause 
-//            << (energyConsumed - energyConsumed_old_aux) << ","
-//            << remainingEnergy
+            << nodePause
+            //            << (energyConsumed - energyConsumed_old_aux) << ","
+            //            << remainingEnergy
             << std::endl;
 
     out.close();
     packetsReceived = 0;
-   // energyConsumed_old_aux = energyConsumed;
+    // energyConsumed_old_aux = energyConsumed;
     Simulator::Schedule(Seconds(1.0), &RoutingExperiment::CheckThroughput, this);
 }
 
@@ -228,12 +228,12 @@ RoutingExperiment::CommandSetup(int argc, char **argv) {
     CommandLine cmd;
     cmd.AddValue("nWifis", "Total number of nodes", nWifis);
     cmd.AddValue("totalTime", "Simulation time", totalTime);
-  //  cmd.AddValue("port", "Socket port", port);
-  //  cmd.AddValue("bytesTotal", "Initial bytescount", bytesTotal);
+    //  cmd.AddValue("port", "Socket port", port);
+    //  cmd.AddValue("bytesTotal", "Initial bytescount", bytesTotal);
     cmd.AddValue("packetSize", "Packet size", packetSize);
     cmd.AddValue("rate", "Data rate", rate);
     cmd.AddValue("CSVfileName", "The name of the CSV output file name", m_CSVfileName);
-   // cmd.AddValue("nSinks", "Amoung of tx nodes", nSinks);
+    // cmd.AddValue("nSinks", "Amoung of tx nodes", nSinks);
     cmd.AddValue("m_txp", "Transmission power", m_txp);
     cmd.AddValue("traceMobility", "Enable mobility tracing", m_traceMobility);
     cmd.AddValue("pause", "Pausing time", nodePause);
@@ -264,11 +264,11 @@ main(int argc, char *argv[]) {
             "PacketsReceived," <<
             "NumberOfNodes," <<
             "NumberOfSinks," <<
-          //  "RoutingProtocol," <<
+            //  "RoutingProtocol," <<
             "TransmissionPower," <<
             "nodePause," <<
-          //  "Total_energy_consumed," <<
-          //  "Remaining_energy" <<
+            //  "Total_energy_consumed," <<
+            //  "Remaining_energy" <<
             std::endl;
     out.close();
 
@@ -314,14 +314,14 @@ RoutingExperiment::Run() {
     /***************************************************************************/
     // all sources are connected to node 1
     // energy source
-//    Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (sources.Get(1));
-//    basicSourcePtr->TraceConnectWithoutContext("RemainingEnergy", MakeCallback(&RoutingExperiment::RemainingEnergy, this));
-//    // device energy model
-//    Ptr<DeviceEnergyModel> basicRadioModelPtr =
-//            basicSourcePtr->FindDeviceEnergyModels("ns3::WifiRadioEnergyModel").Get(0);
-//    NS_ASSERT(basicRadioModelPtr != NULL);
-//
-//    basicRadioModelPtr->TraceConnectWithoutContext("TotalEnergyConsumption", MakeCallback(&RoutingExperiment::TotalEnergy, this));
+    //    Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (sources.Get(1));
+    //    basicSourcePtr->TraceConnectWithoutContext("RemainingEnergy", MakeCallback(&RoutingExperiment::RemainingEnergy, this));
+    //    // device energy model
+    //    Ptr<DeviceEnergyModel> basicRadioModelPtr =
+    //            basicSourcePtr->FindDeviceEnergyModels("ns3::WifiRadioEnergyModel").Get(0);
+    //    NS_ASSERT(basicRadioModelPtr != NULL);
+    //
+    //    basicRadioModelPtr->TraceConnectWithoutContext("TotalEnergyConsumption", MakeCallback(&RoutingExperiment::TotalEnergy, this));
 
     std::cout << "Starting simulation for " << totalTime << " s ...\n";
 
@@ -350,7 +350,7 @@ RoutingExperiment::CreateNodes() {
 
     adhocNodes.Create(nWifis);
     // Name nodes
-    for (unsigned  i = 0; i < nWifis; ++i) {
+    for (unsigned i = 0; i < nWifis; ++i) {
         std::ostringstream os;
         os << "node-" << i;
         Names::Add(os.str(), adhocNodes.Get(i));
@@ -396,12 +396,22 @@ RoutingExperiment::CreateDevices() {
     wifiChannel.SetPropagationDelay("ns3::ConstantSpeedPropagationDelayModel");
     wifiChannel.AddPropagationLoss("ns3::FriisPropagationLossModel");
     wifiPhy.SetChannel(wifiChannel.Create());
+    
+    wifiPhy.Set("TxPowerStart", DoubleValue(33));
+    wifiPhy.Set("TxPowerEnd", DoubleValue(33));
+    wifiPhy.Set("TxPowerLevels", UintegerValue(1));
+    wifiPhy.Set("TxGain", DoubleValue(0));
+    wifiPhy.Set("RxGain", DoubleValue(0));
+    wifiPhy.Set("EnergyDetectionThreshold", DoubleValue(-61.8));
+    wifiPhy.Set("CcaMode1Threshold", DoubleValue(-64.8));
 
     // Add a mac and disable rate control
     WifiMacHelper wifiMac;
     wifi.SetRemoteStationManager("ns3::ConstantRateWifiManager",
             "DataMode", StringValue(phyMode),
             "ControlMode", StringValue(phyMode));
+    
+    
 
     // wifiPhy.Set("TxPowerStart", DoubleValue(txp));
     // wifiPhy.Set("TxPowerEnd", DoubleValue(txp));
@@ -433,7 +443,7 @@ RoutingExperiment::InstallInternetStack() {
 }
 
 void
-RoutingExperiment::InstallApplications() {   
+RoutingExperiment::InstallApplications() {
 
     Config::SetDefault("ns3::OnOffApplication::PacketSize", StringValue(packetSize));
     Config::SetDefault("ns3::OnOffApplication::DataRate", StringValue(rate));
@@ -442,17 +452,16 @@ RoutingExperiment::InstallApplications() {
     onoff1.SetAttribute("OnTime", StringValue("ns3::ConstantRandomVariable[Constant=1.0]"));
     onoff1.SetAttribute("OffTime", StringValue("ns3::ConstantRandomVariable[Constant=0.0]"));
 
-    for (int i = 0; i < nSinks; i++)
-    {
-      Ptr<Socket> sink = SetupPacketReceive (adhocInterfaces.GetAddress (i), adhocNodes.Get (i));
+    for (int i = 0; i < nSinks; i++) {
+        Ptr<Socket> sink = SetupPacketReceive(adhocInterfaces.GetAddress(i), adhocNodes.Get(i));
 
-      AddressValue remoteAddress (InetSocketAddress (adhocInterfaces.GetAddress (i), port));
-      onoff1.SetAttribute ("Remote", remoteAddress);
+        AddressValue remoteAddress(InetSocketAddress(adhocInterfaces.GetAddress(i), port));
+        onoff1.SetAttribute("Remote", remoteAddress);
 
-      Ptr<UniformRandomVariable> var = CreateObject<UniformRandomVariable> ();
-      ApplicationContainer temp = onoff1.Install (adhocNodes.Get (i + nSinks));
-      temp.Start (Seconds (var->GetValue (0.0,0.5)));
-      temp.Stop (Seconds (totalTime));
+        Ptr<UniformRandomVariable> var = CreateObject<UniformRandomVariable> ();
+        ApplicationContainer temp = onoff1.Install(adhocNodes.Get(i + nSinks));
+        temp.Start(Seconds(var->GetValue(0.0, 0.5)));
+        temp.Stop(Seconds(totalTime));
     }
 }
 
