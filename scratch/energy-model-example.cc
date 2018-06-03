@@ -41,6 +41,7 @@
 #include "ns3/config.h"
 #include "ns3/string.h"
 #include "ns3/yans-wifi-helper.h"
+#include "ns3/flow-monitor-module.h"
 #include <cmath>
 
 #include <iostream>
@@ -306,6 +307,12 @@ RoutingExperiment::Run() {
     NS_LOG_INFO("Run Simulation.");
     CheckThroughput();
 
+    //
+    // Calculate Throughput using Flowmonitor
+    //
+    FlowMonitorHelper flowmon;
+    Ptr<FlowMonitor> monitor = flowmon.InstallAll();
+
 
     /** simulation setup **/
     Simulator::Stop(Seconds(totalTime));
@@ -339,6 +346,59 @@ RoutingExperiment::Run() {
                 << std::endl;
     }
     out_.close();
+
+
+    //
+    // Calculate Throughput using Flowmonitor
+    // Now, do the actual simulation.
+    //
+    monitor->CheckForLostPackets();
+
+    double RxBytes_monitor = 0;
+    double throughput_monitor = 0;
+    double delay_monitor = 0;
+    int RxPackets = 0;
+    int TxPackets = 0;
+    int PacketsLost = 0;    
+
+    Ptr<Ipv4FlowClassifier> classifier = DynamicCast<Ipv4FlowClassifier> (flowmon.GetClassifier());
+
+    std::map<FlowId, FlowMonitor::FlowStats> stats = monitor->GetFlowStats();
+    for (std::map<FlowId, FlowMonitor::FlowStats>::const_iterator i = stats.begin(); i != stats.end(); ++i) {
+
+        Ipv4FlowClassifier::FiveTuple t = classifier->FindFlow(i->first);
+
+        RxBytes_monitor += i->second.rxBytes;
+        delay_monitor += (i->second.delaySum).GetSeconds();
+        RxPackets += i->second.rxPackets;
+        TxPackets += i->second.txPackets;
+        PacketsLost += i->second.lostPackets;
+
+        double throughput_aux = i->second.rxBytes * 8.0 / (i->second.timeLastRxPacket.GetSeconds() - i->second.timeFirstTxPacket.GetSeconds()) / 1024;
+        throughput_monitor += throughput_aux;
+
+
+        std::cout << "Flow " << i->first << " (" << t.sourceAddress << " -> " << t.destinationAddress << ")\n";
+        std::cout << "  Tx Bytes:   " << i->second.txBytes << "\n";
+        std::cout << "  Rx Bytes:   " << i->second.rxBytes << "\n";
+        std::cout << "  Throughput: " << throughput_aux << " Kbps\n";
+
+        std::cout << "   Delay: " << i->second.delaySum << " ns\n";
+        std::cout << "   TxPackets: " << i->second.txPackets << " ns\n";
+        std::cout << "   RxPackets: " << i->second.rxPackets << " ns\n";
+        std::cout << "   LostPackets: " << i->second.lostPackets << " ns\n";
+    }
+
+    std::string CSVfileName_monitor = m_CSVfileName + "_monitor";
+    std::ofstream out_monitor(CSVfileName_monitor.c_str());
+
+    out_ << "ThroughputTotal,ThroughputTotal2,AveDelay,TotalDelay,DataRatioPacket,TotalTxPackets,TotalRxPackets\n" <<
+            throughput_monitor << "," << (RxBytes_monitor * 8.0) / totalTime << "," << (delay_monitor / RxPackets) << "," << delay_monitor << ","
+            << (100 * (RxPackets / TxPackets)) << "," << TxPackets << RxPackets
+            << std::endl;
+    out_monitor.close();
+
+    monitor->SerializeToXmlFile("lab-4.flowmon", true, true);
 
     Simulator::Destroy();
 }
@@ -396,25 +456,25 @@ RoutingExperiment::CreateDevices() {
     wifiChannel.SetPropagationDelay("ns3::ConstantSpeedPropagationDelayModel");
     wifiChannel.AddPropagationLoss("ns3::FriisPropagationLossModel");
     wifiPhy.SetChannel(wifiChannel.Create());
-    
-    wifiPhy.Set("TxPowerStart", DoubleValue(33));
-    wifiPhy.Set("TxPowerEnd", DoubleValue(33));
-    wifiPhy.Set("TxPowerLevels", UintegerValue(1));
-    wifiPhy.Set("TxGain", DoubleValue(0));
-    wifiPhy.Set("RxGain", DoubleValue(0));
-    wifiPhy.Set("EnergyDetectionThreshold", DoubleValue(-61.8));
-    wifiPhy.Set("CcaMode1Threshold", DoubleValue(-64.8));
+
+//    wifiPhy.Set("TxPowerStart", DoubleValue(33));
+//    wifiPhy.Set("TxPowerEnd", DoubleValue(33));
+//    wifiPhy.Set("TxPowerLevels", UintegerValue(1));
+//    wifiPhy.Set("TxGain", DoubleValue(0));
+//    wifiPhy.Set("RxGain", DoubleValue(0));
+//    wifiPhy.Set("EnergyDetectionThreshold", DoubleValue(-61.8));
+//    wifiPhy.Set("CcaMode1Threshold", DoubleValue(-64.8));
 
     // Add a mac and disable rate control
     WifiMacHelper wifiMac;
     wifi.SetRemoteStationManager("ns3::ConstantRateWifiManager",
             "DataMode", StringValue(phyMode),
             "ControlMode", StringValue(phyMode));
-    
-    
 
-    // wifiPhy.Set("TxPowerStart", DoubleValue(txp));
-    // wifiPhy.Set("TxPowerEnd", DoubleValue(txp));
+
+
+     wifiPhy.Set("TxPowerStart", DoubleValue(m_txp));
+     wifiPhy.Set("TxPowerEnd", DoubleValue(m_txp));
 
     //Set Non-unicastMode rate to unicast mode
     Config::SetDefault("ns3::WifiRemoteStationManager::NonUnicastMode", StringValue(phyMode));
