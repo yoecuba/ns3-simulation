@@ -194,8 +194,6 @@ RoutingExperiment::CheckThroughput() {
     // NS_LOG_UNCOND("Consumo en segundo " << Simulator::Now().GetSeconds() << ": " << energyConsumed);
     // NS_LOG_UNCOND("Energia residual  " << Simulator::Now().GetSeconds() << ": " << remainingEnergy);
 
-    NS_LOG_UNCOND("SECOND: " << Simulator::Now().GetSeconds());
-
     out << (Simulator::Now()).GetSeconds() << ","
             << kbs << ","
             << packetsReceived << ","
@@ -379,22 +377,22 @@ RoutingExperiment::Run() {
 
 
         std::cout << "Flow " << i->first << " (" << t.sourceAddress << " -> " << t.destinationAddress << ")\n";
-        std::cout << "  Tx Bytes:   " << i->second.txBytes << "\n";
-        std::cout << "  Rx Bytes:   " << i->second.rxBytes << "\n";
-        std::cout << "  Throughput: " << throughput_aux << " Kbps\n";
-
-        std::cout << "   Delay: " << i->second.delaySum << " ns\n";
+//        std::cout << "  Tx Bytes:   " << i->second.txBytes << "\n";
+//        std::cout << "  Rx Bytes:   " << i->second.rxBytes << "\n";
+//        std::cout << "  Throughput: " << throughput_aux << " Kbps\n";
+//
+//        std::cout << "   Delay: " << i->second.delaySum << " ns\n";
         std::cout << "   TxPackets: " << i->second.txPackets << " \n";
         std::cout << "   RxPackets: " << i->second.rxPackets << " \n";
-        std::cout << "   LostPackets: " << i->second.lostPackets << " \n";
+//        std::cout << "   LostPackets: " << i->second.lostPackets << " \n";
     }
 
     std::string CSVfileName_monitor = m_CSVfileName + "_monitor";
     std::ofstream out_monitor(CSVfileName_monitor.c_str());
 
     out_monitor << "ThroughputTotal,ThroughputTotal2,AveDelay,TotalDelay,DataRatioPacket,TotalTxPackets,TotalRxPackets,TotalLost\n" <<
-            throughput_monitor << "," << (RxBytes_monitor * 8.0) / totalTime << "," << (delay_monitor / RxPackets) << "," << delay_monitor << ","
-            << (100 * (RxPackets / TxPackets)) << "," << TxPackets << "," << RxPackets<< "," <<PacketsLost
+            throughput_monitor << "," << (RxBytes_monitor * 8.0) / totalTime /1024 << "," << (delay_monitor / RxPackets) << "," << delay_monitor << ","
+            << (100 * (RxPackets*1.0 / TxPackets)) << "," << TxPackets << "," << RxPackets<< "," <<PacketsLost
             << std::endl;
     out_monitor.close();
 
