@@ -115,6 +115,8 @@ private:
     /// Nodes velocity
     int nodeSpeed; //in m/s
     double energyConsumed_old_aux = 0.0;
+    //
+    double troughput_3 = 0;
     //\}
 
     ///\name network
@@ -150,6 +152,7 @@ RoutingExperiment::ReceivePacket(Ptr<Socket> socket) {
     Address senderAddress;
     while ((packet = socket->RecvFrom(senderAddress))) {
         bytesTotal += packet->GetSize();
+        troughput_3 += packet->GetSize();
         packetsReceived += 1;
         NS_LOG_UNCOND(PrintReceivedPacket(socket, packet, senderAddress));
     }
@@ -173,7 +176,7 @@ RoutingExperiment::TotalEnergy(double oldValue, double totalEnergy) {
 
 void
 RoutingExperiment::CheckThroughput() {
-    double kbs = (bytesTotal * 8.0) / 1000;
+    double kbs = (bytesTotal * 8.0) / 1024;
     bytesTotal = 0;
     //    double energyConsumed = 0;
     //    double remainingEnergy = 0;
@@ -357,7 +360,7 @@ RoutingExperiment::Run() {
     double delay_monitor = 0;
     int RxPackets = 0;
     int TxPackets = 0;
-    int PacketsLost = 0;    
+    int PacketsLost = 0;
 
     Ptr<Ipv4FlowClassifier> classifier = DynamicCast<Ipv4FlowClassifier> (flowmon.GetClassifier());
 
@@ -377,22 +380,22 @@ RoutingExperiment::Run() {
 
 
         std::cout << "Flow " << i->first << " (" << t.sourceAddress << " -> " << t.destinationAddress << ")\n";
-//        std::cout << "  Tx Bytes:   " << i->second.txBytes << "\n";
-//        std::cout << "  Rx Bytes:   " << i->second.rxBytes << "\n";
-//        std::cout << "  Throughput: " << throughput_aux << " Kbps\n";
-//
-//        std::cout << "   Delay: " << i->second.delaySum << " ns\n";
+        //        std::cout << "  Tx Bytes:   " << i->second.txBytes << "\n";
+        //        std::cout << "  Rx Bytes:   " << i->second.rxBytes << "\n";
+        //        std::cout << "  Throughput: " << throughput_aux << " Kbps\n";
+        //
+        //        std::cout << "   Delay: " << i->second.delaySum << " ns\n";
         std::cout << "   TxPackets: " << i->second.txPackets << " \n";
         std::cout << "   RxPackets: " << i->second.rxPackets << " \n";
-//        std::cout << "   LostPackets: " << i->second.lostPackets << " \n";
+        //        std::cout << "   LostPackets: " << i->second.lostPackets << " \n";
     }
 
     std::string CSVfileName_monitor = m_CSVfileName + "_monitor";
     std::ofstream out_monitor(CSVfileName_monitor.c_str());
 
-    out_monitor << "ThroughputTotal,ThroughputTotal2,AveDelay,TotalDelay,DataRatioPacket,TotalTxPackets,TotalRxPackets,TotalLost\n" <<
-            throughput_monitor << "," << (RxBytes_monitor * 8.0) / totalTime /1024 << "," << (1.0*delay_monitor / RxPackets) << "," << delay_monitor << ","
-            << (100 * (RxPackets*1.0 / TxPackets)) << "," << TxPackets << "," << RxPackets<< "," <<PacketsLost
+    out_monitor << "ThroughputTotal,ThroughputTotal2,Throughput3,AveDelay,TotalDelay,DataRatioPacket,TotalTxPackets,TotalRxPackets,TotalLost\n" <<
+            throughput_monitor << "," << (RxBytes_monitor * 8.0) / totalTime / 1024 << "," << (troughput_3 * 8) / totalTime / 1024 << "," << (1.0 * delay_monitor / RxPackets) << "," << delay_monitor << ","
+            << (100 * (RxPackets * 1.0 / TxPackets)) << "," << TxPackets << "," << RxPackets << "," << PacketsLost
             << std::endl;
     out_monitor.close();
 
@@ -444,12 +447,11 @@ void
 RoutingExperiment::CreateDevices() {
     // Parameters    
     std::string phyMode("DsssRate11Mbps");
+    Config::SetDefault("ns3::WifiRemoteStationManager::RtsCtsThreshold", UintegerValue(1)); // enable rts cts all the time.
 
     // setting up wifi phy and channel using helpers
     WifiHelper wifi;
     wifi.SetStandard(WIFI_PHY_STANDARD_80211b);
-    
-    Config::SetDefault ("ns3::WifiRemoteStationManager::RtsCtsThreshold", UintegerValue (1)); // enable rts cts all the time.
 
     YansWifiPhyHelper wifiPhy = YansWifiPhyHelper::Default();
     YansWifiChannelHelper wifiChannel;
@@ -457,13 +459,13 @@ RoutingExperiment::CreateDevices() {
     wifiChannel.AddPropagationLoss("ns3::FriisPropagationLossModel");
     wifiPhy.SetChannel(wifiChannel.Create());
 
-//    wifiPhy.Set("TxPowerStart", DoubleValue(33));
-//    wifiPhy.Set("TxPowerEnd", DoubleValue(33));
-//    wifiPhy.Set("TxPowerLevels", UintegerValue(1));
-//    wifiPhy.Set("TxGain", DoubleValue(0));
-//    wifiPhy.Set("RxGain", DoubleValue(0));
-//    wifiPhy.Set("EnergyDetectionThreshold", DoubleValue(-61.8));
-//    wifiPhy.Set("CcaMode1Threshold", DoubleValue(-64.8));
+    //    wifiPhy.Set("TxPowerStart", DoubleValue(33));
+    //    wifiPhy.Set("TxPowerEnd", DoubleValue(33));
+    //    wifiPhy.Set("TxPowerLevels", UintegerValue(1));
+    //    wifiPhy.Set("TxGain", DoubleValue(0));
+    //    wifiPhy.Set("RxGain", DoubleValue(0));
+    //    wifiPhy.Set("EnergyDetectionThreshold", DoubleValue(-61.8));
+    //    wifiPhy.Set("CcaMode1Threshold", DoubleValue(-64.8));
 
     // Add a mac and disable rate control
     WifiMacHelper wifiMac;
@@ -473,8 +475,8 @@ RoutingExperiment::CreateDevices() {
 
 
 
-     wifiPhy.Set("TxPowerStart", DoubleValue(m_txp));
-     wifiPhy.Set("TxPowerEnd", DoubleValue(m_txp));
+    wifiPhy.Set("TxPowerStart", DoubleValue(m_txp));
+    wifiPhy.Set("TxPowerEnd", DoubleValue(m_txp));
 
     //Set Non-unicastMode rate to unicast mode
     Config::SetDefault("ns3::WifiRemoteStationManager::NonUnicastMode", StringValue(phyMode));
