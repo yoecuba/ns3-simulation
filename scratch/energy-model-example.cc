@@ -392,9 +392,9 @@ RoutingExperiment::Run() {
     std::string CSVfileName_monitor = m_CSVfileName + "_monitor";
     std::ofstream out_monitor(CSVfileName_monitor.c_str());
 
-    out_monitor << "ThroughputTotal,ThroughputTotal2,AveDelay,TotalDelay,DataRatioPacket,TotalTxPackets,TotalRxPackets\n" <<
+    out_monitor << "ThroughputTotal,ThroughputTotal2,AveDelay,TotalDelay,DataRatioPacket,TotalTxPackets,TotalRxPackets,TotalLost\n" <<
             throughput_monitor << "," << (RxBytes_monitor * 8.0) / totalTime << "," << (delay_monitor / RxPackets) << "," << delay_monitor << ","
-            << (100 * (RxPackets / TxPackets)) << "," << TxPackets << RxPackets
+            << (100 * (RxPackets / TxPackets)) << "," << TxPackets << "," << RxPackets<< "," <<PacketsLost
             << std::endl;
     out_monitor.close();
 
