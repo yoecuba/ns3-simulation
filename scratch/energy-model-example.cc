@@ -384,15 +384,15 @@ RoutingExperiment::Run() {
         std::cout << "  Throughput: " << throughput_aux << " Kbps\n";
 
         std::cout << "   Delay: " << i->second.delaySum << " ns\n";
-        std::cout << "   TxPackets: " << i->second.txPackets << " ns\n";
-        std::cout << "   RxPackets: " << i->second.rxPackets << " ns\n";
-        std::cout << "   LostPackets: " << i->second.lostPackets << " ns\n";
+        std::cout << "   TxPackets: " << i->second.txPackets << " \n";
+        std::cout << "   RxPackets: " << i->second.rxPackets << " \n";
+        std::cout << "   LostPackets: " << i->second.lostPackets << " \n";
     }
 
     std::string CSVfileName_monitor = m_CSVfileName + "_monitor";
     std::ofstream out_monitor(CSVfileName_monitor.c_str());
 
-    out_ << "ThroughputTotal,ThroughputTotal2,AveDelay,TotalDelay,DataRatioPacket,TotalTxPackets,TotalRxPackets\n" <<
+    out_monitor << "ThroughputTotal,ThroughputTotal2,AveDelay,TotalDelay,DataRatioPacket,TotalTxPackets,TotalRxPackets\n" <<
             throughput_monitor << "," << (RxBytes_monitor * 8.0) / totalTime << "," << (delay_monitor / RxPackets) << "," << delay_monitor << ","
             << (100 * (RxPackets / TxPackets)) << "," << TxPackets << RxPackets
             << std::endl;
