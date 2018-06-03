@@ -448,6 +448,8 @@ RoutingExperiment::CreateDevices() {
     // setting up wifi phy and channel using helpers
     WifiHelper wifi;
     wifi.SetStandard(WIFI_PHY_STANDARD_80211b);
+    
+    Config::SetDefault ("ns3::WifiRemoteStationManager::RtsCtsThreshold", UintegerValue (1)); // enable rts cts all the time.
 
     YansWifiPhyHelper wifiPhy = YansWifiPhyHelper::Default();
     YansWifiChannelHelper wifiChannel;
