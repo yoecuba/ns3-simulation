@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-./waf --run "scratch/energy-model-example --pause=2 --nWifis=20 --energyEnhance=true --fileName="test_1/simulation0"" > test_1/log3.0.out 2>&1
+#./waf --run "scratch/energy-model-example --pause=2 --nWifis=20 --energyEnhance=true --fileName="test_1/simulation0"" > test_1/log3.0.out 2>&1
 
-./waf --run "scratch/energy-model-example --pause=2 --nWifis=40 --energyEnhance=true --fileName="test_1/simulation1"" > test_1/log3.1.out 2>&1
+#./waf --run "scratch/energy-model-example --pause=2 --nWifis=40 --energyEnhance=true --fileName="test_1/simulation1"" > test_1/log3.1.out 2>&1
 
 ./waf --run "scratch/energy-model-example --pause=2 --nWifis=60 --energyEnhance=true --fileName="test_1/simulation2"" > test_1/log3.2.out 2>&1
 
