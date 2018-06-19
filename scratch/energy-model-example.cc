@@ -73,7 +73,7 @@ PrintReceivedPacket(Ptr<Socket> socket, Ptr<Packet> packet, Address senderAddres
 }
 
 //static void
-//RemainingEnergy(std::string context, double oldValue, double remainingEnergy) {
+//-RemainingEnergy(std::string context, double oldValue, double remainingEnergy) {
 //
 //    if (remainingEnergy == 0) {
 //        // NS_LOG_UNCOND("At " << Simulator::Now().GetSeconds() << "s Node " << context << " died.");
@@ -243,8 +243,8 @@ main(int argc, char *argv[]) {
      * 
      */
     // Enable AODV logs by default. Comment this if too noisy
-    LogComponentEnable("AodvRoutingProtocol", LOG_LEVEL_LOGIC);
-    LogComponentEnable("AodvRoutingTable", LOG_LEVEL_LOGIC);
+   // LogComponentEnable("AodvRoutingProtocol", LOG_LEVEL_LOGIC);
+   // LogComponentEnable("AodvRoutingTable", LOG_LEVEL_LOGIC);
 
     LogComponentEnable("EnergyExample", LogLevel(LOG_PREFIX_TIME | LOG_PREFIX_NODE | LOG_LEVEL_INFO));
 
