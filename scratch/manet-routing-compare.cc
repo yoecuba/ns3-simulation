@@ -310,17 +310,17 @@ RoutingExperiment::Run() {
     std::ofstream out_(CSVfileName_energy.c_str());
 
 
-//    for (DeviceEnergyModelContainer::Iterator iter = deviceModels.Begin(); iter != deviceModels.End(); iter++) {
-//        double energyConsumed = (*iter)->GetTotalEnergyConsumption();
-//        NS_LOG_UNCOND("End of simulation (" << Simulator::Now().GetSeconds()
-//                << "s) Total energy consumed by radio = " << energyConsumed << "J");
-//        NS_ASSERT(energyConsumed <= 0.1);
-//        out_ << (Simulator::Now()).GetSeconds() << ","
-//                << energyConsumed
-//                << std::endl;
-//    }
-//    out_.close();
-    
+    //    for (DeviceEnergyModelContainer::Iterator iter = deviceModels.Begin(); iter != deviceModels.End(); iter++) {
+    //        double energyConsumed = (*iter)->GetTotalEnergyConsumption();
+    //        NS_LOG_UNCOND("End of simulation (" << Simulator::Now().GetSeconds()
+    //                << "s) Total energy consumed by radio = " << energyConsumed << "J");
+    //        NS_ASSERT(energyConsumed <= 0.1);
+    //        out_ << (Simulator::Now()).GetSeconds() << ","
+    //                << energyConsumed
+    //                << std::endl;
+    //    }
+    //    out_.close();
+
     Simulator::Destroy();
 }
 
