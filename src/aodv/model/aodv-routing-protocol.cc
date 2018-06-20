@@ -177,7 +177,7 @@ namespace ns3 {
         m_nb(m_helloInterval),
         m_rreqCount(0),
         m_rerrCount(0),
-        powerSaving(false),
+        powerSaving(true),
         energyEnhance(false),
         m_htimer(Timer::CANCEL_ON_DESTROY),
         m_rreqRateLimitTimer(Timer::CANCEL_ON_DESTROY),
