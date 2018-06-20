@@ -1,0 +1,485 @@
+Waf: Entering directory `/home/claudia/workspace/bake/source/ns-3.28/build'
+Waf: Leaving directory `/home/claudia/workspace/bake/source/ns-3.28/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.498s)
++0.000000000s -1 Run Simulation.
+2.01599 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 6
+Energy remaining at forwarding : 18.349 node 6 time : 2.01599
+2.05285 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 18.3175 node 11 time : 2.05285
+2.30644 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 18.1096 node 11 time : 2.30644
+2.30751 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 18.1084 node 2 time : 2.30751
+2.30916 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.3 nodo actual 19
+Energy remaining at forwarding : 18.1045 node 19 time : 2.30916
+2.31669 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 18.1004 node 17 time : 2.31669
+2.32452 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 18.0937 node 4 time : 2.32452
+2.32571 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.5 nodo actual 0
+Energy remaining at forwarding : 18.0915 node 0 time : 2.32571
+2.3701 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 13
+Energy remaining at forwarding : 18.0552 node 13 time : 2.3701
+2.38462 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 14
+Energy remaining at forwarding : 18.0426 node 14 time : 2.38462
+2.72001 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 17.7696 node 11 time : 2.72001
+2.72138 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 17.7638 node 15 time : 2.72138
+2.75386 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 17.738 node 2 time : 2.75386
+4.00268 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 6
+Energy remaining at forwarding : 16.7074 node 6 time : 4.00268
+4.01428 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 16.7094 node 11 time : 4.01428
+4.01573 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 16.6996 node 2 time : 4.01573
+4.01675 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.3 nodo actual 19
+Energy remaining at forwarding : 16.6961 node 19 time : 4.01675
+4.03263 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 16.6912 node 17 time : 4.03263
+4.03375 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 16.6852 node 2 time : 4.03375
+4.03617 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 16.6916 node 11 time : 4.03617
+4.09443 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 18
+Energy remaining at forwarding : 16.6319 node 18 time : 4.09443
+4.36227 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 13
+Energy remaining at forwarding : 16.4153 node 13 time : 4.36227
+4.37388 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 16.4031 node 8 time : 4.37388
+4.40447 Checking after sent paquet from 10.1.1.3 to 10.1.1.2
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 16.3834 node 17 time : 4.40447
+4.43927 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 16.3589 node 11 time : 4.43927
+4.44026 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 16.347 node 15 time : 4.44026
+4.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 16.2999 node 2 time : 4.4992
+4.50055 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 16.3041 node 17 time : 4.50055
+6.00887 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 6
+Energy remaining at forwarding : 15.0585 node 6 time : 6.00887
+6.02067 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 15.0611 node 11 time : 6.02067
+6.03269 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 15.052 node 17 time : 6.03269
+6.03378 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 15.0401 node 2 time : 6.03378
+6.05569 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 15.0222 node 2 time : 6.05569
+6.05658 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.3 nodo actual 19
+Energy remaining at forwarding : 15.0153 node 19 time : 6.05658
+6.12277 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 14.9671 node 2 time : 6.12277
+6.35776 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 13
+Energy remaining at forwarding : 14.7728 node 13 time : 6.35776
+6.35934 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 14.7692 node 8 time : 6.35934
+6.43666 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 14.7191 node 11 time : 6.43666
+6.43788 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 14.7021 node 15 time : 6.43788
+6.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 14.66 node 2 time : 6.4992
+6.50041 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 14.6656 node 17 time : 6.50041
+7.01396 Checking after sent paquet from 10.1.1.16 to 10.1.1.17
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 14.2324 node 8 time : 7.01396
+8.00268 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 6
+Energy remaining at forwarding : 13.4222 node 6 time : 8.00268
+8.01209 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 13.4265 node 11 time : 8.01209
+8.01318 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 13.4183 node 2 time : 8.01318
+8.03263 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 13.4094 node 17 time : 8.03263
+8.03357 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 2
+Energy remaining at forwarding : 13.4017 node 2 time : 8.03357
+8.12772 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 13.3241 node 2 time : 8.12772
+8.35702 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 13.1282 node 8 time : 8.35702
+8.3688 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 13.1201 node 6 time : 8.3688
+8.37005 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.7 nodo actual 17
+Energy remaining at forwarding : 13.132 node 17 time : 8.37005
+8.43528 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 13.0792 node 11 time : 8.43528
+8.43632 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 13.0618 node 15 time : 8.43632
+8.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 13.0192 node 2 time : 8.4992
+8.50025 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 13.0259 node 17 time : 8.50025
+10.0333 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 11.7709 node 17 time : 10.0333
+10.0344 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 2
+Energy remaining at forwarding : 11.7647 node 2 time : 10.0344
+10.0491 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 11.7567 node 11 time : 10.0491
+10.0598 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 11.7481 node 11 time : 10.0598
+10.0608 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 11.7433 node 2 time : 10.0608
+10.0944 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 11.7179 node 2 time : 10.0944
+10.357 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 11.484 node 8 time : 10.357
+10.4353 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 11.4402 node 11 time : 10.4353
+10.4368 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 11.4188 node 15 time : 10.4368
+10.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 11.3868 node 2 time : 10.4992
+10.5005 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 11.3861 node 17 time : 10.5005
+12.0112 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 10.1493 node 11 time : 12.0112
+12.0125 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 10.1466 node 2 time : 12.0125
+12.0326 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 10.1303 node 17 time : 12.0326
+12.0362 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 10.1289 node 11 time : 12.0362
+12.0944 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 10.0814 node 2 time : 12.0944
+12.4353 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 9.8019 node 11 time : 12.4353
+12.4368 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 9.77723 node 15 time : 12.4368
+12.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 9.74853 node 2 time : 12.4992
+14.0252 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 8.49909 node 11 time : 14.0252
+14.0264 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 8.49772 node 2 time : 14.0264
+14.033 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 8.49269 node 17 time : 14.033
+14.0944 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 8.44312 node 2 time : 14.0944
+14.3592 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 8.20075 node 6 time : 14.3592
+14.3858 Checking after sent paquet from 10.1.1.15 to 10.1.1.18
+Nodo anterior vecino 10.1.1.15 nodo actual 9
+Energy remaining at forwarding : 8.16309 node 9 time : 14.3858
+14.4353 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 8.16244 node 11 time : 14.4353
+14.4431 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 8.13257 node 15 time : 14.4431
+14.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 8.10717 node 2 time : 14.4992
+16.0442 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 6.84049 node 17 time : 16.0442
+16.0944 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 6.80073 node 2 time : 16.0944
+16.3501 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 6.56432 node 6 time : 16.3501
+16.4353 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 6.52271 node 11 time : 16.4353
+16.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 6.46759 node 2 time : 16.4992
+18.0334 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 5.20962 node 17 time : 18.0334
+18.0952 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 5.1579 node 2 time : 18.0952
+18.4283 Checking after sent paquet from 10.1.1.15 to 10.1.1.18
+Nodo anterior vecino 10.1.1.15 nodo actual 15
+Energy remaining at forwarding : 4.86314 node 15 time : 18.4283
+Need new path, energy: 4.86314
+18.4572 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 4.86302 node 11 time : 18.4572
+Need new path, energy: 4.86302
+18.5043 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 4.82157 node 2 time : 18.5043
+Need new path, energy: 4.82157
+20.0318 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 17
+Energy remaining at forwarding : 3.56279 node 17 time : 20.0318
+Need new path, energy: 3.56279
+20.0329 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 3.56191 node 17 time : 20.0329
+Need new path, energy: 3.56191
+20.3501 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 18
+Energy remaining at forwarding : 3.2685 node 18 time : 20.3501
+Need new path, energy: 3.2685
+20.3598 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 12
+Energy remaining at forwarding : 3.25578 node 12 time : 20.3598
+Need new path, energy: 3.25578
+20.3608 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.12 nodo actual 3
+Energy remaining at forwarding : 3.26448 node 3 time : 20.3608
+Need new path, energy: 3.26448
+20.4353 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 14
+Energy remaining at forwarding : 3.22833 node 14 time : 20.4353
+Need new path, energy: 3.22833
+20.5263 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 3.16184 node 2 time : 20.5263
+Need new path, energy: 3.16184
+22.0219 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 6
+Energy remaining at forwarding : 2.49734 node 6 time : 22.0219
+Need new path, energy: 2.49734
+22.4353 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 14
+Energy remaining at forwarding : 2.52008 node 14 time : 22.4353
+Need new path, energy: 2.52008
+24.353 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 9
+Energy remaining at forwarding : 2.47988 node 9 time : 24.353
+Need new path, energy: 2.47988
+24.4353 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 14
+Energy remaining at forwarding : 2.52008 node 14 time : 24.4353
+Need new path, energy: 2.52008
+24.5181 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 24.5181
+Need new path, energy: 2.48494
+26.4353 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 14
+Energy remaining at forwarding : 2.52008 node 14 time : 26.4353
+Need new path, energy: 2.52008
+26.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 26.4992
+Need new path, energy: 2.48494
+28.3623 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 9
+Energy remaining at forwarding : 2.47988 node 9 time : 28.3623
+Need new path, energy: 2.47988
+28.3796 Checking after sent paquet from 10.1.1.15 to 10.1.1.18
+Nodo anterior vecino 10.1.1.15 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 28.3796
+Need new path, energy: 2.48494
+28.4439 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 28.4439
+Need new path, energy: 2.48494
+28.5078 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 28.5078
+Need new path, energy: 2.48494
+30.0113 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 2.52894 node 2 time : 30.0113
+Need new path, energy: 2.52894
+30.0334 Checking after sent paquet from 10.1.1.18 to 10.1.1.6
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 30.0334
+Need new path, energy: 2.48426
+30.3583 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 30.3583
+Need new path, energy: 2.48494
+30.4353 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 30.4353
+Need new path, energy: 2.48494
+30.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 30.4992
+Need new path, energy: 2.48494
+32.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 2.52894 node 2 time : 32.0027
+Need new path, energy: 2.52894
+32.3501 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 32.3501
+Need new path, energy: 2.48494
+32.4203 Checking after sent paquet from 10.1.1.19 to 10.1.1.18
+Nodo anterior vecino 10.1.1.19 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 32.4203
+Need new path, energy: 2.48494
+32.4629 Checking after sent paquet from 10.1.1.19 to 10.1.1.4
+Nodo anterior vecino 10.1.1.19 nodo actual 5
+Energy remaining at forwarding : 2.48146 node 5 time : 32.4629
+Need new path, energy: 2.48146
+32.5035 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 32.5035
+Need new path, energy: 2.48494
+34.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 2.52894 node 2 time : 34.0027
+Need new path, energy: 2.52894
+34.3501 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 34.3501
+Need new path, energy: 2.48494
+34.5284 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 34.5284
+Need new path, energy: 2.48494
+36.5017 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 36.5017
+Need new path, energy: 2.48494
+38.0431 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 38.0431
+Need new path, energy: 2.48494
+38.502 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 12
+Energy remaining at forwarding : 2.48494 node 12 time : 38.502
+Need new path, energy: 2.48494
+42.0227 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 42.0227
+Need new path, energy: 2.48426
+42.5422 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 3
+Energy remaining at forwarding : 2.49374 node 3 time : 42.5422
+Need new path, energy: 2.49374
+44.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 44.0027
+Need new path, energy: 2.48426
+44.5067 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 5
+Energy remaining at forwarding : 2.48146 node 5 time : 44.5067
+Need new path, energy: 2.48146
+46.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 46.0027
+Need new path, energy: 2.48426
+48.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 48.0027
+Need new path, energy: 2.48426
+48.5508 Checking after sent paquet from 10.1.1.12 to 10.1.1.13
+Nodo anterior vecino 10.1.1.12 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 48.5508
+Need new path, energy: 2.48426
+50.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 50.0027
+Need new path, energy: 2.48426
+52.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 52.0027
+Need new path, energy: 2.48426
+54.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 54.0027
+Need new path, energy: 2.48426
+56.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 56.0027
+Need new path, energy: 2.48426
+56.4185 Checking after sent paquet from 10.1.1.3 to 10.1.1.18
+Nodo anterior vecino 10.1.1.3 nodo actual 3
+Energy remaining at forwarding : 2.49374 node 3 time : 56.4185
+Need new path, energy: 2.49374
+57.4602 Checking after sent paquet from 10.1.1.6 to 10.1.1.20
+Nodo anterior vecino 10.1.1.6 nodo actual 17
+Energy remaining at forwarding : 2.52239 node 17 time : 57.4602
+Need new path, energy: 2.52239
+58.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 2.48426 node 4 time : 58.0027
+Need new path, energy: 2.48426
+58.4464 Checking after sent paquet from 10.1.1.13 to 10.1.1.19
+Nodo anterior vecino 10.1.1.13 nodo actual 6
+Energy remaining at forwarding : 2.49734 node 6 time : 58.4464
+Need new path, energy: 2.49734
++60.000000000s -1 test_1/simulation6
+Command ['/home/claudia/workspace/bake/source/ns-3.28/build/scratch/energy-model-example', '--pause=6', '--nWifis=20', '--energyEnhance=true', '--fileName=test_1/simulation6'] terminated with signal SIGSEGV. Run it under a debugger to get more information (./waf --run <program> --command-template="gdb --args %s <args>").
