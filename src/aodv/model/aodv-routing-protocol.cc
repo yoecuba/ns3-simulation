@@ -178,34 +178,13 @@ namespace ns3 {
         m_rreqCount(0),
         m_rerrCount(0),
         powerSaving(false),
-        energyEnhance(true),
+        energyEnhance(false),
         m_htimer(Timer::CANCEL_ON_DESTROY),
         m_rreqRateLimitTimer(Timer::CANCEL_ON_DESTROY),
         m_rerrRateLimitTimer(Timer::CANCEL_ON_DESTROY),
         m_lastBcastTime(Seconds(0)) {
             m_nb.SetCallback(MakeCallback(&RoutingProtocol::SendRerrWhenBreaksLinkToNextHop, this));
         }
-
-        //        void
-        //        RoutingProtocol::RemainingEnergy(double old, double neww) {
-        //
-        //             Ptr<Node> node = m_ipv4->GetObject<Node>();
-        //            //            Ptr<EnergySourceContainer> EnergySourceContrainerOnNode = node->GetObject<EnergySourceContainer> ();
-        //            //
-        //            //
-        //            //            Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (EnergySourceContrainerOnNode->Get(0));
-        //            //
-        //            //            double remainingE = basicSourcePtr->GetRemainingEnergy();
-        //            //                    double energyconsum = basicRadioModelPtr->GetTotalEnergyConsumption();
-        //            NS_LOG_UNCOND(Simulator::Now().GetSeconds() << " from " << old
-        //                    << " to Current remaining energy = " << neww << "J" << " node " << node->GetId());
-        //            if (neww < 0.02) {
-        //                NS_LOG_UNCOND("Need new path, energy: " << neww);
-        //                //                RoutingProtocol::PowerSavingEnhance();
-        //
-        //                //                        NS_LOG_UNCOND("Need new path, consumsion: " << energyconsum);
-        //            }
-        //        }
 
         TypeId
         RoutingProtocol::GetTypeId(void) {
@@ -399,48 +378,6 @@ namespace ns3 {
 
         }
 
-        //        void
-        //        RoutingProtocol::PowerSavingEnhance() {
-        //
-        //            NS_LOG_UNCOND("WIN!!!");
-        //
-        //            Ptr<Node> node = m_ipv4->GetObject<Node>();
-        //            Ptr<EnergySourceContainer> EnergySourceContrainerOnNode = node->GetObject<EnergySourceContainer> ();
-        //            Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (EnergySourceContrainerOnNode->Get(0));
-        //            NS_LOG_UNCOND(basicSourcePtr->GetRemainingEnergy());
-        //
-        //            //            NS_LOG_UNCOND("Checking before sent paquet from " << header.GetSource() << " to " << header.GetDestination());
-        //            //            Ptr<Node> node = m_ipv4->GetObject<Node>();
-        //            //            Ptr<EnergySourceContainer> EnergySourceContrainerOnNode = node->GetObject<EnergySourceContainer> ();
-        //            //
-        //            //
-        //            //            Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (EnergySourceContrainerOnNode->Get(0));
-        //            //            //
-        //            //            //
-        //            //            //            basicSourcePtr->TraceConnectWithoutContext("RemainingEnergy", MakeCallback(&RoutingProtocol::RemainingEnergy, this));
-        //            //            //
-        //            //            //            //            Ptr<DeviceEnergyModel> basicRadioModelPtr =
-        //            //            //            //                    (basicSourcePtr->FindDeviceEnergyModels("ns3::WifiRadioEnergyModel")).Get(0);
-        //            //            //            //            NS_ASSERT(basicRadioModelPtr != NULL);
-        //            //            //
-        //            //            //
-        //            //            //
-        //            ////            double remainingE = basicSourcePtr->GetRemainingEnergy();
-        //            //            //            //  double energyconsum = basicRadioModelPtr->GetTotalEnergyConsumption();
-        //            //            NS_LOG_UNCOND("Energy: " << basicSourcePtr->GetRemainingEnergy());
-        //            //            //  NS_LOG_UNCOND("Consumsion: " << energyconsum);
-        //            //            if (remainingE < 0.02) {
-        //            //                NS_LOG_UNCOND("Need new path, energy: " << remainingE);
-        //            //                //     NS_LOG_UNCOND("Need new path, consumsion: " << energyconsum);
-        //            //                //            }
-        //            //                //                Simulator::Schedule(Seconds(1.0), &RoutingProtocol::PowerSavingEnhance, this);
-        //            //            }
-        //        }
-
-
-
-        //BUSCA LA RUTA AL DESTINO SI EXISTE Y LA RETORNA
-
         Ptr<Ipv4Route>
         RoutingProtocol::RouteOutput(Ptr<Packet> p, const Ipv4Header &header,
                 Ptr<NetDevice> oif, Socket::SocketErrno &sockerr) {
@@ -630,6 +567,16 @@ namespace ns3 {
             Ipv4Address origin = header.GetSource();
             m_routingTable.Purge();
             RoutingTableEntry toDst;
+
+            Ptr<Node> node = m_ipv4->GetObject<Node>();
+            Ptr<EnergySourceContainer> EnergySourceContrainerOnNode = node->GetObject<EnergySourceContainer> ();
+            Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (EnergySourceContrainerOnNode->Get(0));
+            double remainingE = basicSourcePtr->GetRemainingEnergy();
+            if(remainingE<2.0){
+                NS_LOG_UNCOND("Node cannot forward because "<< node->GetId()<< " is dead!");
+                return false;
+            }
+
             if (m_routingTable.LookupRoute(dst, toDst)) {
                 if (toDst.GetFlag() == VALID) {
                     Ptr<Ipv4Route> route = toDst.GetRoute();
@@ -660,17 +607,14 @@ namespace ns3 {
 
                     // Energy Enhance
                     //*************************************************
-                    Ptr<Node> node = m_ipv4->GetObject<Node>();
-                    Ptr<EnergySourceContainer> EnergySourceContrainerOnNode = node->GetObject<EnergySourceContainer> ();
-                    Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (EnergySourceContrainerOnNode->Get(0));
-                    double remainingE = basicSourcePtr->GetRemainingEnergy();
+
 
                     NS_LOG_UNCOND(Simulator::Now().GetSeconds() << " Checking after sent paquet from " << header.GetSource() << " to " << header.GetDestination());
                     NS_LOG_UNCOND("Nodo anterior vecino " << toOrigin.GetNextHop() << " nodo actual " << node->GetId());
 
                     NS_LOG_UNCOND("Energy remaining at forwarding : " << remainingE << " node " << node->GetId() << " time : " << Simulator::Now().GetSeconds());
 
-                    if (remainingE < 5.0) {
+                    if (remainingE < 8.0) {
                         NS_LOG_UNCOND("Need new path, energy: " << remainingE);
                         powerSaving = true;
 
@@ -1622,13 +1566,9 @@ namespace ns3 {
                     " tiene poca energía por lo que luego de reenviar el paquete pedirá a " << neighbor <<
                     " que encuentre otra ruta para llegar a " << dst);
 
-            NS_LOG_UNCOND("Marcando link a " << neighbor << " unidireccional para no recibir sus paquetes RREQ");
-            NS_LOG_UNCOND("Timeout para blacklist " << this->m_blackListTimeout.GetSeconds());
-            m_routingTable.MarkLinkAsUnidirectional(neighbor, this->m_blackListTimeout);
-
             RevrRreqHeader revrrreqHeader;
             revrrreqHeader.SetDst(dst);
-            
+
             TypeHeader typeHeader(AODVTYPE_REVR_RREQ);
             Ptr<Packet> packet = Create<Packet> ();
             SocketIpTtlTag tag;
@@ -1639,8 +1579,17 @@ namespace ns3 {
             RoutingTableEntry toNeighbor;
             m_routingTable.LookupRoute(neighbor, toNeighbor);
             Ptr<Socket> socket = FindSocketWithInterfaceAddress(toNeighbor.GetInterface());
-            NS_ASSERT(socket);
-            socket->SendTo(packet, 0, InetSocketAddress(neighbor, AODV_PORT));
+            if (socket) {
+                // socket->SendTo(packet, 0, InetSocketAddress(neighbor, AODV_PORT));
+                Time jitter = Time(MilliSeconds(m_uniformRandomVariable->GetInteger(0, 10)));
+                Simulator::Schedule(jitter, &RoutingProtocol::SendTo, this, socket, packet, neighbor);
+
+                NS_LOG_UNCOND("Marcando link a " << neighbor << " unidireccional para no recibir sus paquetes RREQ");
+                NS_LOG_UNCOND("Timeout para blacklist " << this->m_blackListTimeout.GetSeconds());
+                m_routingTable.MarkLinkAsUnidirectional(neighbor, this->m_blackListTimeout);
+            } else NS_LOG_UNCOND("No se pudo enviar RevrReq");
+
+
         }
         //*************************************************************
 
@@ -2037,18 +1986,6 @@ namespace ns3 {
         void
         RoutingProtocol::DoInitialize(void) {
             NS_LOG_FUNCTION(this);
-
-            //            std::string context = static_cast<std::ostringstream*> (&(std::ostringstream() << m_ipv4->GetObject<Node>()->GetId()))->str();
-            //            std::cout << "Connecting node " << context << std::endl;
-            //
-            //            Ptr<Node> node = m_ipv4->GetObject<Node>();
-            //            Ptr<EnergySourceContainer> EnergySourceContrainerOnNode = node->GetObject<EnergySourceContainer> ();
-            //            Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (EnergySourceContrainerOnNode->Get(0));
-            //            //   ("PhyRxDrop", MakeBoundCallback (&RxDrop, file));
-            //            basicSourcePtr->TraceConnectWithoutContext("RemainingEnergy", MakeCallback(&RoutingProtocol::RemainingEnergy, this));
-
-            //   basicSourcePtr->TraceConnect("TotalEnergyConsumption", context, MakeCallback(&TotalEnergy));
-
             uint32_t startTime;
             if (m_enableHello) {
                 m_htimer.SetFunction(&RoutingProtocol::HelloTimerExpire, this);
