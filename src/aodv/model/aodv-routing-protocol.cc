@@ -178,7 +178,7 @@ namespace ns3 {
         m_rreqCount(0),
         m_rerrCount(0),
         powerSaving(true),
-        energyEnhance(false),
+        energyEnhance(true),
         m_htimer(Timer::CANCEL_ON_DESTROY),
         m_rreqRateLimitTimer(Timer::CANCEL_ON_DESTROY),
         m_rerrRateLimitTimer(Timer::CANCEL_ON_DESTROY),
@@ -302,10 +302,10 @@ namespace ns3 {
                     StringValue("ns3::UniformRandomVariable"),
                     MakePointerAccessor(&RoutingProtocol::m_uniformRandomVariable),
                     MakePointerChecker<UniformRandomVariable> ())
-                    .AddAttribute("powerSaving", "Using power saving enhance.",
+                    .AddAttribute("energyEnhance", "Using energy enhance.",
                     BooleanValue(false),
-                    MakeBooleanAccessor(&RoutingProtocol::SetPowerSavingEnable,
-                    &RoutingProtocol::GetPowerSavingEnable),
+                    MakeBooleanAccessor(&RoutingProtocol::SetEnergyEnhanceEnable,
+                    &RoutingProtocol::GetEnergyEnhanceEnable),
                     MakeBooleanChecker())
                     ;
             return tid;

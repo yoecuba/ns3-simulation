@@ -155,16 +155,16 @@ namespace ns3 {
              * Set hello enable
              * \param f the hello enable flag
              */
-            void SetPowerSavingEnable(bool f) {
-                powerSaving = f;
+            void SetEnergyEnhanceEnable(bool f) {
+                energyEnhance = f;
             }
 
             /**
              * Get hello enable flag
              * \returns the enable hello flag
              */
-            bool GetPowerSavingEnable() const {
-                return powerSaving;
+            bool GetEnergyEnhanceEnable() const {
+                return energyEnhance;
             }
 
             /**

@@ -135,15 +135,15 @@ private:
 
 RoutingExperiment::RoutingExperiment()
 : nWifis(20),
-totalTime(60.0),
+totalTime(120.0),
 packetSize("512"),
 rate("2048bps"),
 m_fileName("testingAodv.csv"),
 m_txp(7.5),
 m_traceMobility(false),
 nodePause(2.0), //2 seg
-nodeSpeed(20),
-energyEnhance(true) {
+nodeSpeed(30),
+energyEnhance(false) {
 }
 
 /**
@@ -371,13 +371,13 @@ RoutingExperiment::CreateDevices() {
     wifiChannel.AddPropagationLoss("ns3::FriisPropagationLossModel");
     wifiPhy.SetChannel(wifiChannel.Create());
 
-    //    wifiPhy.Set("TxPowerStart", DoubleValue(33));
-    //    wifiPhy.Set("TxPowerEnd", DoubleValue(33));
-    //    wifiPhy.Set("TxPowerLevels", UintegerValue(1));
-    //    wifiPhy.Set("TxGain", DoubleValue(0));
-    //    wifiPhy.Set("RxGain", DoubleValue(0));
-    //    wifiPhy.Set("EnergyDetectionThreshold", DoubleValue(-61.8));
-    //    wifiPhy.Set("CcaMode1Threshold", DoubleValue(-64.8));
+        wifiPhy.Set("TxPowerStart", DoubleValue(33));
+        wifiPhy.Set("TxPowerEnd", DoubleValue(33));
+        wifiPhy.Set("TxPowerLevels", UintegerValue(1));
+        wifiPhy.Set("TxGain", DoubleValue(0));
+        wifiPhy.Set("RxGain", DoubleValue(0));
+        wifiPhy.Set("EnergyDetectionThreshold", DoubleValue(-61.8));
+        wifiPhy.Set("CcaMode1Threshold", DoubleValue(-64.8));
 
     // Add a mac and disable rate control
     WifiMacHelper wifiMac;
@@ -387,8 +387,8 @@ RoutingExperiment::CreateDevices() {
 
 
 
-    wifiPhy.Set("TxPowerStart", DoubleValue(m_txp));
-    wifiPhy.Set("TxPowerEnd", DoubleValue(m_txp));
+//    wifiPhy.Set("TxPowerStart", DoubleValue(m_txp));
+    //    wifiPhy.Set("TxPowerEnd", DoubleValue(m_txp));
 
     //Set Non-unicastMode rate to unicast mode
     Config::SetDefault("ns3::WifiRemoteStationManager::NonUnicastMode", StringValue(phyMode));
@@ -402,7 +402,7 @@ RoutingExperiment::InstallInternetStack() {
 
     AodvHelper aodv;
     // you can configure AODV attributes here using aodv.Set(name, value)
-    aodv.Set("powerSaving", BooleanValue(energyEnhance));
+    aodv.Set("energyEnhance", BooleanValue(energyEnhance));
     InternetStackHelper internet;
     internet.SetRoutingHelper(aodv); // has effect on the next Install ()
     internet.Install(adhocNodes);
