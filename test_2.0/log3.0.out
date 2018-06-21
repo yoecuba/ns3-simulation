@@ -1,0 +1,1188 @@
+Waf: Entering directory `/home/claudia/workspace/bake/source/ns-3.28/build'
+[ 960/2766] Compiling scratch/energy-model-example.cc
+[2754/2766] Linking build/scratch/energy-model-example
+Waf: Leaving directory `/home/claudia/workspace/bake/source/ns-3.28/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.600s)
++0.000000000s -1 Run Simulation.
+2.27169 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 13
+Energy remaining at forwarding : 13.1409 node 13 time : 2.27169
+2.28715 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 13.1283 node 17 time : 2.28715
+2.2951 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 13.1216 node 2 time : 2.2951
+2.59922 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 13
+Energy remaining at forwarding : 12.8737 node 13 time : 2.59922
+2.60027 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 12.873 node 17 time : 2.60027
+2.62846 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 12.8496 node 8 time : 2.62846
+2.62955 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.9 nodo actual 6
+Energy remaining at forwarding : 12.8452 node 6 time : 2.62955
+2.71664 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 8
+Energy remaining at forwarding : 12.7788 node 8 time : 2.71664
+2.71764 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.9 nodo actual 16
+Energy remaining at forwarding : 12.7744 node 16 time : 2.71764
+2.7209 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.17 nodo actual 9
+Energy remaining at forwarding : 12.7701 node 9 time : 2.7209
+2.72276 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 12.7729 node 11 time : 2.72276
+2.72469 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 12.7714 node 11 time : 2.72469
+2.73145 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.10 nodo actual 17
+Energy remaining at forwarding : 12.7678 node 17 time : 2.73145
+2.73284 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 12.7631 node 4 time : 2.73284
+2.73422 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 12.7629 node 15 time : 2.73422
+2.73564 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 12.7619 node 15 time : 2.73564
+2.73653 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 12.7628 node 8 time : 2.73653
+2.73852 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.9 nodo actual 6
+Energy remaining at forwarding : 12.7559 node 6 time : 2.73852
+2.73988 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.7 nodo actual 17
+Energy remaining at forwarding : 12.7614 node 17 time : 2.73988
+2.78775 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 12.719 node 2 time : 2.78775
+2.78888 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 12.7241 node 17 time : 2.78888
+3.26119 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.14 nodo actual 8
+Energy remaining at forwarding : 12.3336 node 8 time : 3.26119
+3.6981 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 11.9755 node 2 time : 3.6981
+3.69916 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.3 nodo actual 4
+Energy remaining at forwarding : 11.9734 node 4 time : 3.69916
+4.00268 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 13
+Energy remaining at forwarding : 11.7233 node 13 time : 4.00268
+4.0041 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.14 nodo actual 8
+Energy remaining at forwarding : 11.7256 node 8 time : 4.0041
+4.01118 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 8
+Energy remaining at forwarding : 11.7203 node 8 time : 4.01118
+4.01224 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.9 nodo actual 16
+Energy remaining at forwarding : 11.7137 node 16 time : 4.01224
+4.01317 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.17 nodo actual 9
+Energy remaining at forwarding : 11.7119 node 9 time : 4.01317
+4.01423 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.10 nodo actual 17
+Energy remaining at forwarding : 11.7213 node 17 time : 4.01423
+4.01532 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 11.715 node 4 time : 4.01532
+4.03263 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 11.7067 node 17 time : 4.03263
+4.03355 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 11.7009 node 2 time : 4.03355
+4.03617 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 11.7011 node 11 time : 4.03617
+4.09443 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 11.6516 node 2 time : 4.09443
+4.09581 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.3 nodo actual 4
+Energy remaining at forwarding : 11.6494 node 4 time : 4.09581
+4.35006 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 13
+Energy remaining at forwarding : 11.4392 node 13 time : 4.35006
+4.35118 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 11.4462 node 17 time : 4.35118
+4.35702 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 11.4372 node 8 time : 4.35702
+4.35808 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.9 nodo actual 6
+Energy remaining at forwarding : 11.4274 node 6 time : 4.35808
+4.43528 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 11.3752 node 11 time : 4.43528
+4.43638 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 15
+Energy remaining at forwarding : 11.3699 node 15 time : 4.43638
+4.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 11.3203 node 2 time : 4.4992
+4.50023 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 11.3245 node 17 time : 4.50023
+6.00268 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 13
+Energy remaining at forwarding : 10.086 node 13 time : 6.00268
+6.00366 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.14 nodo actual 8
+Energy remaining at forwarding : 10.0891 node 8 time : 6.00366
+6.01118 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 8
+Energy remaining at forwarding : 10.0834 node 8 time : 6.01118
+6.01262 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.9 nodo actual 16
+Energy remaining at forwarding : 10.0756 node 16 time : 6.01262
+6.01379 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.17 nodo actual 9
+Energy remaining at forwarding : 10.0725 node 9 time : 6.01379
+6.01483 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.10 nodo actual 17
+Energy remaining at forwarding : 10.0852 node 17 time : 6.01483
+6.0162 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 10.077 node 4 time : 6.0162
+6.03263 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 10.071 node 17 time : 6.03263
+6.03401 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 10.0635 node 2 time : 6.03401
+6.03617 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 10.0645 node 11 time : 6.03617
+6.09443 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 10.0146 node 2 time : 6.09443
+6.09545 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.3 nodo actual 4
+Energy remaining at forwarding : 10.0124 node 4 time : 6.09545
+6.35834 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 9.7989 node 8 time : 6.35834
+6.43528 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 9.7386 node 11 time : 6.43528
+6.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 9.68303 node 2 time : 6.4992
+6.50049 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 9.68788 node 17 time : 6.50049
+8.00268 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 13
+Energy remaining at forwarding : 8.44809 node 13 time : 8.00268
+8.0037 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.14 nodo actual 8
+Energy remaining at forwarding : 8.45182 node 8 time : 8.0037
+8.01118 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 8
+Energy remaining at forwarding : 8.44622 node 8 time : 8.01118
+8.0125 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.9 nodo actual 16
+Energy remaining at forwarding : 8.43742 node 16 time : 8.0125
+8.01345 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.17 nodo actual 9
+Energy remaining at forwarding : 8.43439 node 9 time : 8.01345
+8.01495 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.10 nodo actual 17
+Energy remaining at forwarding : 8.44859 node 17 time : 8.01495
+8.0164 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 8.43956 node 4 time : 8.0164
+8.03263 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 8.43456 node 17 time : 8.03263
+8.03395 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 8.42618 node 2 time : 8.03395
+8.03617 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 8.43098 node 11 time : 8.03617
+8.09443 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 8.37722 node 2 time : 8.09443
+8.35702 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 8.16344 node 8 time : 8.35702
+8.36919 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 8.14074 node 6 time : 8.36919
+8.3701 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.7 nodo actual 17
+Energy remaining at forwarding : 8.15867 node 17 time : 8.3701
+8.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 8.04647 node 2 time : 8.4992
+8.50017 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 8.05261 node 17 time : 8.50017
+9.03461 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 7.61457 node 11 time : 9.03461
+Need new path, energy: 7.61457
+El nodo 11 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.19 que encuentre otra ruta para llegar a 10.1.1.9
+Marcando link a 10.1.1.19 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.19; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.12
+El vínculo para llegar a 10.1.1.9 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.12
+Re-sending RREQ to get 10.1.1.9
+9.04743 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 17
+Energy remaining at forwarding : 7.60795 node 17 time : 9.04743
+Need new path, energy: 7.60795
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.12 que encuentre otra ruta para llegar a 10.1.1.9
+Marcando link a 10.1.1.12 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+9.04842 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.18 nodo actual 6
+Energy remaining at forwarding : 7.58415 node 6 time : 9.04842
+Need new path, energy: 7.58415
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.18 que encuentre otra ruta para llegar a 10.1.1.9
+Marcando link a 10.1.1.18 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.12; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.9 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.9
+Recibiendo paquete RevrRreq para m_local=10.1.1.18; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.9 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.13 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.9
+10.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 13
+Energy remaining at forwarding : 6.80848 node 13 time : 10.0027
+Need new path, energy: 6.80848
+El nodo 13 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.18 que encuentre otra ruta para llegar a 10.1.1.8
+Marcando link a 10.1.1.18 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.18; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.14
+El vínculo para llegar a 10.1.1.8 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.8 a través de 10.1.1.14
+Eliminando ruta hacia 10.1.1.14 a través de 10.1.1.14
+Re-sending RREQ to get 10.1.1.8
+10.0112 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 8
+Energy remaining at forwarding : 6.81001 node 8 time : 10.0112
+Need new path, energy: 6.81001
+El nodo 8 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.11 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.11 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.0125 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.9 nodo actual 16
+Energy remaining at forwarding : 6.79745 node 16 time : 10.0125
+Need new path, energy: 6.79745
+El nodo 16 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.9 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.9 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.0139 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.17 nodo actual 9
+Energy remaining at forwarding : 6.7944 node 9 time : 10.0139
+Need new path, energy: 6.7944
+El nodo 9 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.17 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.17 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.0149 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.10 nodo actual 17
+Energy remaining at forwarding : 6.81982 node 17 time : 10.0149
+Need new path, energy: 6.81982
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.10 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.10 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.11; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.9
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.9
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.9
+Eliminando ruta hacia 10.1.1.14 a través de 10.1.1.9
+Re-sending RREQ to get 10.1.1.1
+10.0168 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.18 nodo actual 4
+Energy remaining at forwarding : 6.80018 node 4 time : 10.0168
+Need new path, energy: 6.80018
+El nodo 4 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.18 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.18 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.9; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.17
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.17
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.17
+Re-sending RREQ to get 10.1.1.1
+Recibiendo paquete RevrRreq para m_local=10.1.1.10; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.19 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.1
+Recibiendo paquete RevrRreq para m_local=10.1.1.18; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.5
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.5
+Eliminando ruta hacia 10.1.1.5 a través de 10.1.1.5
+Re-sending RREQ to get 10.1.1.1
+Recibiendo paquete RevrRreq para m_local=10.1.1.17; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.10
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.10
+Eliminando ruta hacia 10.1.1.10 a través de 10.1.1.10
+Re-sending RREQ to get 10.1.1.1
+10.0362 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 6.79571 node 11 time : 10.0362
+Need new path, energy: 6.79571
+El nodo 11 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.13 que encuentre otra ruta para llegar a 10.1.1.3
+Marcando link a 10.1.1.13 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.0461 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 6.79541 node 17 time : 10.0461
+Need new path, energy: 6.79541
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.14 que encuentre otra ruta para llegar a 10.1.1.4
+Marcando link a 10.1.1.14 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.0548 Checking after sent paquet from 10.1.1.8 to 10.1.1.17
+Nodo anterior vecino 10.1.1.8 nodo actual 10
+Energy remaining at forwarding : 6.76397 node 10 time : 10.0548
+Need new path, energy: 6.76397
+El nodo 10 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.8 que encuentre otra ruta para llegar a 10.1.1.17
+Marcando link a 10.1.1.8 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.0623 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 6.76524 node 2 time : 10.0623
+Need new path, energy: 6.76524
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.18 que encuentre otra ruta para llegar a 10.1.1.4
+Marcando link a 10.1.1.18 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.0676 Checking after sent paquet from 10.1.1.8 to 10.1.1.17
+Nodo anterior vecino 10.1.1.8 nodo actual 10
+Energy remaining at forwarding : 6.75413 node 10 time : 10.0676
+Need new path, energy: 6.75413
+El nodo 10 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.8 que encuentre otra ruta para llegar a 10.1.1.17
+Marcando link a 10.1.1.8 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.0682 Checking after sent paquet from 10.1.1.8 to 10.1.1.17
+Nodo anterior vecino 10.1.1.8 nodo actual 6
+Energy remaining at forwarding : 6.74866 node 6 time : 10.0682
+Need new path, energy: 6.74866
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.8 que encuentre otra ruta para llegar a 10.1.1.17
+Marcando link a 10.1.1.8 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.8; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.11
+El vínculo para llegar a 10.1.1.17 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.11
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.11
+Re-sending RREQ to get 10.1.1.17
+Recibiendo paquete RevrRreq para m_local=10.1.1.14; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.4 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.2 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.4 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.5 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.19 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.4
+Recibiendo paquete RevrRreq para m_local=10.1.1.8; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.17 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.17
+10.0842 Checking after sent paquet from 10.1.1.8 to 10.1.1.17
+Nodo anterior vecino 10.1.1.8 nodo actual 6
+Energy remaining at forwarding : 6.73637 node 6 time : 10.0842
+Need new path, energy: 6.73637
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.8 que encuentre otra ruta para llegar a 10.1.1.17
+Marcando link a 10.1.1.8 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.8; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.11
+El vínculo para llegar a 10.1.1.17 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.11
+Re-sending RREQ to get 10.1.1.17
+Recibiendo paquete RevrRreq para m_local=10.1.1.13; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.12
+El vínculo para llegar a 10.1.1.3 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.16 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.12
+Re-sending RREQ to get 10.1.1.3
+Recibiendo paquete RevrRreq para m_local=10.1.1.8; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.17 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.17
+10.1001 Checking after sent paquet from 10.1.1.8 to 10.1.1.17
+Nodo anterior vecino 10.1.1.8 nodo actual 10
+Energy remaining at forwarding : 6.72905 node 10 time : 10.1001
+Need new path, energy: 6.72905
+El nodo 10 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.8 que encuentre otra ruta para llegar a 10.1.1.17
+Marcando link a 10.1.1.8 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.1106 Checking after sent paquet from 10.1.1.8 to 10.1.1.17
+Nodo anterior vecino 10.1.1.11 nodo actual 6
+Energy remaining at forwarding : 6.71548 node 6 time : 10.1106
+Need new path, energy: 6.71548
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.11 que encuentre otra ruta para llegar a 10.1.1.17
+Marcando link a 10.1.1.11 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.11; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.17 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.17
+Recibiendo paquete RevrRreq para m_local=10.1.1.8; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.11
+El vínculo para llegar a 10.1.1.17 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.11
+Re-sending RREQ to get 10.1.1.17
+Recibiendo paquete RevrRreq para m_local=10.1.1.18; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.3
+El vínculo para llegar a 10.1.1.4 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.4 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.3
+Re-sending RREQ to get 10.1.1.4
+10.171 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 6.67743 node 2 time : 10.171
+Need new path, energy: 6.67743
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.12 que encuentre otra ruta para llegar a 10.1.1.2
+Marcando link a 10.1.1.12 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.12; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.3
+El vínculo para llegar a 10.1.1.2 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.2 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.3
+Re-sending RREQ to get 10.1.1.2
+10.183 Checking after sent paquet from 10.1.1.7 to 10.1.1.18
+Nodo anterior vecino 10.1.1.7 nodo actual 13
+Energy remaining at forwarding : 6.65979 node 13 time : 10.183
+Need new path, energy: 6.65979
+El nodo 13 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.7 que encuentre otra ruta para llegar a 10.1.1.18
+Marcando link a 10.1.1.7 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.7; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.14
+El vínculo para llegar a 10.1.1.18 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.14 a través de 10.1.1.14
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.14
+Re-sending RREQ to get 10.1.1.18
+10.3501 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 6.52382 node 6 time : 10.3501
+Need new path, energy: 6.52382
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.15 que encuentre otra ruta para llegar a 10.1.1.5
+Marcando link a 10.1.1.15 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.3512 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.7 nodo actual 17
+Energy remaining at forwarding : 6.54877 node 17 time : 10.3512
+Need new path, energy: 6.54877
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.7 que encuentre otra ruta para llegar a 10.1.1.5
+Marcando link a 10.1.1.7 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.15; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.5 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.5 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.5
+10.357 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 8
+Energy remaining at forwarding : 6.52245 node 8 time : 10.357
+Need new path, energy: 6.52245
+El nodo 8 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.16 que encuentre otra ruta para llegar a 10.1.1.6
+Marcando link a 10.1.1.16 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.3596 Checking after sent paquet from 10.1.1.18 to 10.1.1.7
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 6.52462 node 2 time : 10.3596
+Need new path, energy: 6.52462
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.18 que encuentre otra ruta para llegar a 10.1.1.7
+Marcando link a 10.1.1.18 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.18; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.3
+El vínculo para llegar a 10.1.1.7 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.4 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.3
+Re-sending RREQ to get 10.1.1.7
+Recibiendo paquete RevrRreq para m_local=10.1.1.16; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.9
+El vínculo para llegar a 10.1.1.6 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.9
+Eliminando ruta hacia 10.1.1.6 a través de 10.1.1.9
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.9
+Re-sending RREQ to get 10.1.1.6
+10.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 6.41036 node 2 time : 10.4992
+Need new path, energy: 6.41036
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.20 que encuentre otra ruta para llegar a 10.1.1.10
+Marcando link a 10.1.1.20 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+10.5004 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 17
+Energy remaining at forwarding : 6.42731 node 17 time : 10.5004
+Need new path, energy: 6.42731
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.3 que encuentre otra ruta para llegar a 10.1.1.10
+Marcando link a 10.1.1.3 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.20; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.3
+El vínculo para llegar a 10.1.1.10 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.10 a través de 10.1.1.3
+Re-sending RREQ to get 10.1.1.10
+Recibiendo paquete RevrRreq para m_local=10.1.1.3; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.10 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.10 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.13 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.14 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.10
+12.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 13
+Energy remaining at forwarding : 5.1659 node 13 time : 12.0027
+Need new path, energy: 5.1659
+El nodo 13 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.18 que encuentre otra ruta para llegar a 10.1.1.8
+Marcando link a 10.1.1.18 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.18; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.14
+El vínculo para llegar a 10.1.1.8 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.8 a través de 10.1.1.14
+Eliminando ruta hacia 10.1.1.14 a través de 10.1.1.14
+Re-sending RREQ to get 10.1.1.8
+12.0112 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 6
+Energy remaining at forwarding : 5.16474 node 6 time : 12.0112
+Need new path, energy: 5.16474
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.11 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.11 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.0121 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.7 nodo actual 2
+Energy remaining at forwarding : 5.17541 node 2 time : 12.0121
+Need new path, energy: 5.17541
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.7 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.7 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.11; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.13 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.1
+Recibiendo paquete RevrRreq para m_local=10.1.1.7; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.3
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.3
+Re-sending RREQ to get 10.1.1.1
+12.0362 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 18
+Energy remaining at forwarding : 5.15129 node 18 time : 12.0362
+Need new path, energy: 5.15129
+El nodo 18 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.13 que encuentre otra ruta para llegar a 10.1.1.3
+Marcando link a 10.1.1.13 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.0467 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 6
+Energy remaining at forwarding : 5.13781 node 6 time : 12.0467
+Need new path, energy: 5.13781
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.14 que encuentre otra ruta para llegar a 10.1.1.4
+Marcando link a 10.1.1.14 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.0504 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 5.15846 node 17 time : 12.0504
+Need new path, energy: 5.15846
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.14 que encuentre otra ruta para llegar a 10.1.1.4
+Marcando link a 10.1.1.14 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.14; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.4 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.4 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.4
+12.0536 Checking after sent paquet from 10.1.1.17 to 10.1.1.7
+Nodo anterior vecino 10.1.1.17 nodo actual 7
+Energy remaining at forwarding : 5.12024 node 7 time : 12.0536
+Need new path, energy: 5.12024
+El nodo 7 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.17 que encuentre otra ruta para llegar a 10.1.1.7
+Marcando link a 10.1.1.17 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.14; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.4 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.2 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.5 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.13 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.19 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.4
+Recibiendo paquete RevrRreq para m_local=10.1.1.17; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.8
+El vínculo para llegar a 10.1.1.7 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.8
+Eliminando ruta hacia 10.1.1.8 a través de 10.1.1.8
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.8
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.8
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.8
+Re-sending RREQ to get 10.1.1.7
+12.0944 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 5.10837 node 2 time : 12.0944
+Need new path, energy: 5.10837
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.12 que encuentre otra ruta para llegar a 10.1.1.2
+Marcando link a 10.1.1.12 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.1002 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 5.10931 node 11 time : 12.1002
+Need new path, energy: 5.10931
+El nodo 11 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.13 que encuentre otra ruta para llegar a 10.1.1.3
+Marcando link a 10.1.1.13 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.13; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.19
+El vínculo para llegar a 10.1.1.3 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.19
+Eliminando ruta hacia 10.1.1.19 a través de 10.1.1.19
+Re-sending RREQ to get 10.1.1.3
+Recibiendo paquete RevrRreq para m_local=10.1.1.13; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.12
+El vínculo para llegar a 10.1.1.3 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.16 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.12
+Re-sending RREQ to get 10.1.1.3
+Recibiendo paquete RevrRreq para m_local=10.1.1.12; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.3
+El vínculo para llegar a 10.1.1.2 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.2 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.14 a través de 10.1.1.3
+Re-sending RREQ to get 10.1.1.2
+12.3501 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 7
+Energy remaining at forwarding : 4.87686 node 7 time : 12.3501
+Need new path, energy: 4.87686
+El nodo 7 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.15 que encuentre otra ruta para llegar a 10.1.1.5
+Marcando link a 10.1.1.15 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.3515 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 4.88855 node 6 time : 12.3515
+Need new path, energy: 4.88855
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.15 que encuentre otra ruta para llegar a 10.1.1.5
+Marcando link a 10.1.1.15 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.3528 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.7 nodo actual 17
+Energy remaining at forwarding : 4.9131 node 17 time : 12.3528
+Need new path, energy: 4.9131
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.7 que encuentre otra ruta para llegar a 10.1.1.5
+Marcando link a 10.1.1.7 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.15; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.8
+El vínculo para llegar a 10.1.1.5 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.5 a través de 10.1.1.8
+Eliminando ruta hacia 10.1.1.8 a través de 10.1.1.8
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.8
+Re-sending RREQ to get 10.1.1.5
+Recibiendo paquete RevrRreq para m_local=10.1.1.7; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.5 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.4 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.5 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.19 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.5
+12.357 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 6
+Energy remaining at forwarding : 4.88476 node 6 time : 12.357
+Need new path, energy: 4.88476
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.16 que encuentre otra ruta para llegar a 10.1.1.6
+Marcando link a 10.1.1.16 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.363 Checking after sent paquet from 10.1.1.7 to 10.1.1.15
+Nodo anterior vecino 10.1.1.7 nodo actual 9
+Energy remaining at forwarding : 4.86371 node 9 time : 12.363
+Need new path, energy: 4.86371
+El nodo 9 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.7 que encuentre otra ruta para llegar a 10.1.1.15
+Marcando link a 10.1.1.7 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.7; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.10
+El vínculo para llegar a 10.1.1.15 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.10 a través de 10.1.1.10
+Eliminando ruta hacia 10.1.1.13 a través de 10.1.1.10
+Re-sending RREQ to get 10.1.1.15
+Recibiendo paquete RevrRreq para m_local=10.1.1.16; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.6 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.6 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.13 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.6
+12.4401 Checking after sent paquet from 10.1.1.18 to 10.1.1.7
+Nodo anterior vecino 10.1.1.18 nodo actual 2
+Energy remaining at forwarding : 4.82631 node 2 time : 12.4401
+Need new path, energy: 4.82631
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.18 que encuentre otra ruta para llegar a 10.1.1.7
+Marcando link a 10.1.1.18 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.18; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.3
+El vínculo para llegar a 10.1.1.7 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.3
+Re-sending RREQ to get 10.1.1.7
+12.449 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 4.8248 node 11 time : 12.449
+Need new path, energy: 4.8248
+El nodo 11 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.19 que encuentre otra ruta para llegar a 10.1.1.9
+Marcando link a 10.1.1.19 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.4501 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 17
+Energy remaining at forwarding : 4.83414 node 17 time : 12.4501
+Need new path, energy: 4.83414
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.12 que encuentre otra ruta para llegar a 10.1.1.9
+Marcando link a 10.1.1.12 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.451 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.18 nodo actual 6
+Energy remaining at forwarding : 4.80825 node 6 time : 12.451
+Need new path, energy: 4.80825
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.18 que encuentre otra ruta para llegar a 10.1.1.9
+Marcando link a 10.1.1.18 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.12; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.9 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.9
+Recibiendo paquete RevrRreq para m_local=10.1.1.19; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.12
+El vínculo para llegar a 10.1.1.9 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.12
+Re-sending RREQ to get 10.1.1.9
+Recibiendo paquete RevrRreq para m_local=10.1.1.18; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.9 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.9
+12.5015 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 3
+Energy remaining at forwarding : 4.76037 node 3 time : 12.5015
+Need new path, energy: 4.76037
+El nodo 3 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.20 que encuentre otra ruta para llegar a 10.1.1.10
+Marcando link a 10.1.1.20 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.5027 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 2
+Energy remaining at forwarding : 4.77589 node 2 time : 12.5027
+Need new path, energy: 4.77589
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.20 que encuentre otra ruta para llegar a 10.1.1.10
+Marcando link a 10.1.1.20 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.5036 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 6
+Energy remaining at forwarding : 4.7675 node 6 time : 12.5036
+Need new path, energy: 4.7675
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.3 que encuentre otra ruta para llegar a 10.1.1.10
+Marcando link a 10.1.1.3 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.20; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.4
+El vínculo para llegar a 10.1.1.10 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.4 a través de 10.1.1.4
+Eliminando ruta hacia 10.1.1.10 a través de 10.1.1.4
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.4
+Re-sending RREQ to get 10.1.1.10
+Recibiendo paquete RevrRreq para m_local=10.1.1.3; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.10 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.8 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.10 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.10
+12.51 Checking after sent paquet from 10.1.1.3 to 10.1.1.20
+Nodo anterior vecino 10.1.1.3 nodo actual 3
+Energy remaining at forwarding : 4.75437 node 3 time : 12.51
+Need new path, energy: 4.75437
+El nodo 3 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.3 que encuentre otra ruta para llegar a 10.1.1.20
+Marcando link a 10.1.1.3 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+12.5202 Checking after sent paquet from 10.1.1.4 to 10.1.1.3
+Nodo anterior vecino 10.1.1.4 nodo actual 17
+Energy remaining at forwarding : 4.77891 node 17 time : 12.5202
+Need new path, energy: 4.77891
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.4 que encuentre otra ruta para llegar a 10.1.1.3
+Marcando link a 10.1.1.4 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.4; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.3 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.3
+14.0027 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 5
+Energy remaining at forwarding : 3.51446 node 5 time : 14.0027
+Need new path, energy: 3.51446
+El nodo 5 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.18 que encuentre otra ruta para llegar a 10.1.1.8
+Marcando link a 10.1.1.18 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.18; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.6
+El vínculo para llegar a 10.1.1.8 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.6 a través de 10.1.1.6
+Eliminando ruta hacia 10.1.1.8 a través de 10.1.1.6
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.6
+Re-sending RREQ to get 10.1.1.8
+14.0112 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 8
+Energy remaining at forwarding : 3.52417 node 8 time : 14.0112
+Need new path, energy: 3.52417
+El nodo 8 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.11 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.11 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+14.0121 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 6
+Energy remaining at forwarding : 3.53119 node 6 time : 14.0121
+Need new path, energy: 3.53119
+El nodo 6 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.11 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.11 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+14.0135 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.7 nodo actual 2
+Energy remaining at forwarding : 3.53935 node 2 time : 14.0135
+Need new path, energy: 3.53935
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.7 que encuentre otra ruta para llegar a 10.1.1.1
+Marcando link a 10.1.1.7 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.11; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.9
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.9
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.9
+Eliminando ruta hacia 10.1.1.14 a través de 10.1.1.9
+Re-sending RREQ to get 10.1.1.1
+Recibiendo paquete RevrRreq para m_local=10.1.1.11; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.7
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.7
+Eliminando ruta hacia 10.1.1.13 a través de 10.1.1.7
+Re-sending RREQ to get 10.1.1.1
+14.0368 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 11
+Energy remaining at forwarding : 3.52566 node 11 time : 14.0368
+Need new path, energy: 3.52566
+El nodo 11 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.13 que encuentre otra ruta para llegar a 10.1.1.3
+Marcando link a 10.1.1.13 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+14.0431 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 17
+Energy remaining at forwarding : 3.53224 node 17 time : 14.0431
+Need new path, energy: 3.53224
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.14 que encuentre otra ruta para llegar a 10.1.1.4
+Marcando link a 10.1.1.14 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.13; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.12
+El vínculo para llegar a 10.1.1.3 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.9 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.16 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.12
+Re-sending RREQ to get 10.1.1.3
+Recibiendo paquete RevrRreq para m_local=10.1.1.7; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.3
+El vínculo para llegar a 10.1.1.1 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.1 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.19 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.3
+Re-sending RREQ to get 10.1.1.1
+14.071 Checking after sent paquet from 10.1.1.10 to 10.1.1.7
+Nodo anterior vecino 10.1.1.10 nodo actual 10
+Energy remaining at forwarding : 3.46999 node 10 time : 14.071
+Need new path, energy: 3.46999
+El nodo 10 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.10 que encuentre otra ruta para llegar a 10.1.1.7
+Marcando link a 10.1.1.10 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.10; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.11
+El vínculo para llegar a 10.1.1.7 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.11
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.11
+Re-sending RREQ to get 10.1.1.7
+Recibiendo paquete RevrRreq para m_local=10.1.1.14; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.4 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.4 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.5 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.13 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.19 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.4
+14.1021 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 2
+Energy remaining at forwarding : 3.46895 node 2 time : 14.1021
+Need new path, energy: 3.46895
+El nodo 2 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.12 que encuentre otra ruta para llegar a 10.1.1.2
+Marcando link a 10.1.1.12 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.12; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.3
+El vínculo para llegar a 10.1.1.2 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.2 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.3
+Eliminando ruta hacia 10.1.1.14 a través de 10.1.1.3
+Re-sending RREQ to get 10.1.1.2
+14.3501 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 9
+Energy remaining at forwarding : 3.23324 node 9 time : 14.3501
+Need new path, energy: 3.23324
+El nodo 9 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.15 que encuentre otra ruta para llegar a 10.1.1.5
+Marcando link a 10.1.1.15 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+14.3512 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.10 nodo actual 17
+Energy remaining at forwarding : 3.27936 node 17 time : 14.3512
+Need new path, energy: 3.27936
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.10 que encuentre otra ruta para llegar a 10.1.1.5
+Marcando link a 10.1.1.10 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.15; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.10
+El vínculo para llegar a 10.1.1.5 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.5 a través de 10.1.1.10
+Eliminando ruta hacia 10.1.1.10 a través de 10.1.1.10
+Re-sending RREQ to get 10.1.1.5
+14.357 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 7
+Energy remaining at forwarding : 3.22756 node 7 time : 14.357
+Need new path, energy: 3.22756
+El nodo 7 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.16 que encuentre otra ruta para llegar a 10.1.1.6
+Marcando link a 10.1.1.16 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.16; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.8
+El vínculo para llegar a 10.1.1.6 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.2 a través de 10.1.1.8
+Eliminando ruta hacia 10.1.1.6 a través de 10.1.1.8
+Eliminando ruta hacia 10.1.1.8 a través de 10.1.1.8
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.8
+Re-sending RREQ to get 10.1.1.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.10; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.5 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.4 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.5 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.13 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.19 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.20 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.5
+14.3965 Checking after sent paquet from 10.1.1.16 to 10.1.1.10
+Nodo anterior vecino 10.1.1.16 nodo actual 14
+Energy remaining at forwarding : 3.2005 node 14 time : 14.3965
+Need new path, energy: 3.2005
+El nodo 14 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.16 que encuentre otra ruta para llegar a 10.1.1.10
+Marcando link a 10.1.1.16 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.16; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.15
+El vínculo para llegar a 10.1.1.10 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.10 a través de 10.1.1.15
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.15
+Re-sending RREQ to get 10.1.1.10
+14.4992 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 11
+Energy remaining at forwarding : 3.14846 node 11 time : 14.4992
+Need new path, energy: 3.14846
+El nodo 11 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.20 que encuentre otra ruta para llegar a 10.1.1.10
+Marcando link a 10.1.1.20 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+14.5007 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.5 nodo actual 17
+Energy remaining at forwarding : 3.15871 node 17 time : 14.5007
+Need new path, energy: 3.15871
+El nodo 17 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.5 que encuentre otra ruta para llegar a 10.1.1.10
+Marcando link a 10.1.1.5 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+14.5017 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.3 nodo actual 5
+Energy remaining at forwarding : 3.10326 node 5 time : 14.5017
+Need new path, energy: 3.10326
+El nodo 5 tiene poca energía por lo que luego de reenviar el paquete pedirá a 10.1.1.3 que encuentre otra ruta para llegar a 10.1.1.10
+Marcando link a 10.1.1.3 unidireccional para no recibir sus paquetes RREQ
+Timeout para blacklist 5.6
+Recibiendo paquete RevrRreq para m_local=10.1.1.3; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.6
+El vínculo para llegar a 10.1.1.10 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.6 a través de 10.1.1.6
+Eliminando ruta hacia 10.1.1.16 a través de 10.1.1.6
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.6
+Re-sending RREQ to get 10.1.1.10
+Recibiendo paquete RevrRreq para m_local=10.1.1.5; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.18
+El vínculo para llegar a 10.1.1.10 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.18
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.18
+Re-sending RREQ to get 10.1.1.10
+Recibiendo paquete RevrRreq para m_local=10.1.1.20; m_mask=255.255.255.0; m_broadcast=10.1.1.255; m_scope=2; m_secondary=0 desde >> 10.1.1.12
+El vínculo para llegar a 10.1.1.10 será eliminado para ahorrar energía
+Eliminando ruta hacia 10.1.1.3 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.7 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.10 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.11 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.12 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.15 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.17 a través de 10.1.1.12
+Eliminando ruta hacia 10.1.1.18 a través de 10.1.1.12
+Re-sending RREQ to get 10.1.1.10
+Node cannot forward because 13 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 17 is dead!
++60.000000000s -1 test_2.0/simulation0
+Command ['/home/claudia/workspace/bake/source/ns-3.28/build/scratch/energy-model-example', '--pause=2', '--nWifis=20', '--energyEnhance=true', '--fileName=test_2.0/simulation0'] terminated with signal SIGSEGV. Run it under a debugger to get more information (./waf --run <program> --command-template="gdb --args %s <args>").

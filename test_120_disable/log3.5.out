@@ -1,0 +1,2140 @@
+Waf: Entering directory `/home/claudia/workspace/bake/source/ns-3.28/build'
+Waf: Leaving directory `/home/claudia/workspace/bake/source/ns-3.28/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.433s)
++0.000000000s -1 Run Simulation.
+2.05571 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 27
+Energy remaining at forwarding : 13.3172 node 27 time : 2.05571
+2.16337 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 30
+Energy remaining at forwarding : 13.2285 node 30 time : 2.16337
+2.48941 Checking after sent paquet from 10.1.1.3 to 10.1.1.45
+Nodo anterior vecino 10.1.1.3 nodo actual 40
+Energy remaining at forwarding : 12.9609 node 40 time : 2.48941
+2.5311 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 56
+Energy remaining at forwarding : 12.9287 node 56 time : 2.5311
+2.53415 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.57 nodo actual 40
+Energy remaining at forwarding : 12.9264 node 40 time : 2.53415
+2.53787 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.41 nodo actual 17
+Energy remaining at forwarding : 12.9167 node 17 time : 2.53787
+2.56463 Checking after sent paquet from 10.1.1.41 to 10.1.1.29
+Nodo anterior vecino 10.1.1.41 nodo actual 45
+Energy remaining at forwarding : 12.8951 node 45 time : 2.56463
+2.67043 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 11
+Energy remaining at forwarding : 12.8115 node 11 time : 2.67043
+2.67144 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.12 nodo actual 20
+Energy remaining at forwarding : 12.8097 node 20 time : 2.67144
+2.85904 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 27
+Energy remaining at forwarding : 12.6541 node 27 time : 2.85904
+2.86019 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.28 nodo actual 15
+Energy remaining at forwarding : 12.6534 node 15 time : 2.86019
+3.1073 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 33
+Energy remaining at forwarding : 12.4477 node 33 time : 3.1073
+3.11516 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.34 nodo actual 11
+Energy remaining at forwarding : 12.4482 node 11 time : 3.11516
+3.37253 Checking after sent paquet from 10.1.1.36 to 10.1.1.41
+Nodo anterior vecino 10.1.1.36 nodo actual 2
+Energy remaining at forwarding : 12.2338 node 2 time : 3.37253
+3.52 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 46
+Energy remaining at forwarding : 12.1116 node 46 time : 3.52
+3.53028 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.47 nodo actual 44
+Energy remaining at forwarding : 12.107 node 44 time : 3.53028
+3.53176 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.45 nodo actual 19
+Energy remaining at forwarding : 12.1082 node 19 time : 3.53176
+4.03859 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 27
+Energy remaining at forwarding : 11.6843 node 27 time : 4.03859
+4.10785 Checking after sent paquet from 10.1.1.57 to 10.1.1.2
+Nodo anterior vecino 10.1.1.57 nodo actual 2
+Energy remaining at forwarding : 11.6311 node 2 time : 4.10785
+4.15005 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 47
+Energy remaining at forwarding : 11.5923 node 47 time : 4.15005
+4.15393 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 35
+Energy remaining at forwarding : 11.5886 node 35 time : 4.15393
+4.15489 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.50 nodo actual 17
+Energy remaining at forwarding : 11.591 node 17 time : 4.15489
+4.18173 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 27
+Energy remaining at forwarding : 11.5663 node 27 time : 4.18173
+4.25171 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 56
+Energy remaining at forwarding : 11.5198 node 56 time : 4.25171
+4.25304 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.57 nodo actual 40
+Energy remaining at forwarding : 11.5135 node 40 time : 4.25304
+4.25438 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.41 nodo actual 17
+Energy remaining at forwarding : 11.5092 node 17 time : 4.25438
+4.37138 Checking after sent paquet from 10.1.1.3 to 10.1.1.47
+Nodo anterior vecino 10.1.1.3 nodo actual 40
+Energy remaining at forwarding : 11.417 node 40 time : 4.37138
+4.41839 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 55
+Energy remaining at forwarding : 11.3698 node 55 time : 4.41839
+4.42045 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.56 nodo actual 2
+Energy remaining at forwarding : 11.3752 node 2 time : 4.42045
+4.42139 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.3 nodo actual 44
+Energy remaining at forwarding : 11.3754 node 44 time : 4.42139
+4.4275 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 33
+Energy remaining at forwarding : 11.3626 node 33 time : 4.4275
+4.42852 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.34 nodo actual 11
+Energy remaining at forwarding : 11.3741 node 11 time : 4.42852
+4.42961 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 55
+Energy remaining at forwarding : 11.3612 node 55 time : 4.42961
+4.43096 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.56 nodo actual 2
+Energy remaining at forwarding : 11.367 node 2 time : 4.43096
+4.43234 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.3 nodo actual 44
+Energy remaining at forwarding : 11.367 node 44 time : 4.43234
+4.43623 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 35
+Energy remaining at forwarding : 11.3553 node 35 time : 4.43623
+4.43713 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 35
+Energy remaining at forwarding : 11.3547 node 35 time : 4.43713
+4.43888 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.36 nodo actual 40
+Energy remaining at forwarding : 11.3598 node 40 time : 4.43888
+4.44117 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.36 nodo actual 40
+Energy remaining at forwarding : 11.3585 node 40 time : 4.44117
+4.48622 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 46
+Energy remaining at forwarding : 11.3201 node 46 time : 4.48622
+4.48904 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.47 nodo actual 44
+Energy remaining at forwarding : 11.321 node 44 time : 4.48904
+4.49005 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.45 nodo actual 19
+Energy remaining at forwarding : 11.3223 node 19 time : 4.49005
+6.03859 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 27
+Energy remaining at forwarding : 10.044 node 27 time : 6.03859
+6.14959 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 23
+Energy remaining at forwarding : 9.95116 node 23 time : 6.14959
+6.15169 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 30
+Energy remaining at forwarding : 9.94262 node 30 time : 6.15169
+6.18902 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.24 nodo actual 26
+Energy remaining at forwarding : 9.92173 node 26 time : 6.18902
+6.18989 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.30 nodo actual 56
+Energy remaining at forwarding : 9.92848 node 56 time : 6.18989
+6.19877 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 27
+Energy remaining at forwarding : 9.91128 node 27 time : 6.19877
+6.20355 Checking after sent paquet from 10.1.1.12 to 10.1.1.19
+Nodo anterior vecino 10.1.1.12 nodo actual 23
+Energy remaining at forwarding : 9.90814 node 23 time : 6.20355
+6.22065 Checking after sent paquet from 10.1.1.21 to 10.1.1.12
+Nodo anterior vecino 10.1.1.21 nodo actual 8
+Energy remaining at forwarding : 9.89451 node 8 time : 6.22065
+6.22169 Checking after sent paquet from 10.1.1.21 to 10.1.1.12
+Nodo anterior vecino 10.1.1.21 nodo actual 7
+Energy remaining at forwarding : 9.89952 node 7 time : 6.22169
+6.23569 Checking after sent paquet from 10.1.1.56 to 10.1.1.12
+Nodo anterior vecino 10.1.1.56 nodo actual 3
+Energy remaining at forwarding : 9.88377 node 3 time : 6.23569
+6.2374 Checking after sent paquet from 10.1.1.56 to 10.1.1.12
+Nodo anterior vecino 10.1.1.56 nodo actual 3
+Energy remaining at forwarding : 9.88241 node 3 time : 6.2374
+6.23798 Checking after sent paquet from 10.1.1.56 to 10.1.1.12
+Nodo anterior vecino 10.1.1.56 nodo actual 3
+Energy remaining at forwarding : 9.88206 node 3 time : 6.23798
+6.24192 Checking after sent paquet from 10.1.1.56 to 10.1.1.12
+Nodo anterior vecino 10.1.1.56 nodo actual 3
+Energy remaining at forwarding : 9.87893 node 3 time : 6.24192
+6.24511 Checking after sent paquet from 10.1.1.56 to 10.1.1.12
+Nodo anterior vecino 10.1.1.56 nodo actual 3
+Energy remaining at forwarding : 9.87625 node 3 time : 6.24511
+6.25236 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 56
+Energy remaining at forwarding : 9.87658 node 56 time : 6.25236
+6.25635 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.57 nodo actual 40
+Energy remaining at forwarding : 9.86873 node 40 time : 6.25635
+6.25728 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.41 nodo actual 17
+Energy remaining at forwarding : 9.86673 node 17 time : 6.25728
+6.25859 Checking after sent paquet from 10.1.1.56 to 10.1.1.12
+Nodo anterior vecino 10.1.1.56 nodo actual 29
+Energy remaining at forwarding : 9.86431 node 29 time : 6.25859
+6.26046 Checking after sent paquet from 10.1.1.56 to 10.1.1.12
+Nodo anterior vecino 10.1.1.56 nodo actual 29
+Energy remaining at forwarding : 9.86304 node 29 time : 6.26046
+6.42428 Checking after sent paquet from 10.1.1.17 to 10.1.1.7
+Nodo anterior vecino 10.1.1.17 nodo actual 14
+Energy remaining at forwarding : 9.73085 node 14 time : 6.42428
+6.43487 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 33
+Energy remaining at forwarding : 9.71152 node 33 time : 6.43487
+6.43585 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 9.73488 node 11 time : 6.43585
+6.44039 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 55
+Energy remaining at forwarding : 9.70804 node 55 time : 6.44039
+6.44137 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.56 nodo actual 2
+Energy remaining at forwarding : 9.71433 node 2 time : 6.44137
+6.44266 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.3 nodo actual 44
+Energy remaining at forwarding : 9.71861 node 44 time : 6.44266
+6.44705 Checking after sent paquet from 10.1.1.46 to 10.1.1.38
+Nodo anterior vecino 10.1.1.46 nodo actual 40
+Energy remaining at forwarding : 9.71218 node 40 time : 6.44705
+6.48036 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 46
+Energy remaining at forwarding : 9.68264 node 46 time : 6.48036
+6.48518 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 23
+Energy remaining at forwarding : 9.67427 node 23 time : 6.48518
+6.48571 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.41 nodo actual 44
+Energy remaining at forwarding : 9.68361 node 44 time : 6.48571
+7.15517 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.24 nodo actual 35
+Energy remaining at forwarding : 9.12379 node 35 time : 7.15517
+7.15636 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.36 nodo actual 13
+Energy remaining at forwarding : 9.12873 node 13 time : 7.15636
+7.51377 Checking after sent paquet from 10.1.1.29 to 10.1.1.41
+Nodo anterior vecino 10.1.1.29 nodo actual 6
+Energy remaining at forwarding : 8.82625 node 6 time : 7.51377
+7.52111 Checking after sent paquet from 10.1.1.9 to 10.1.1.36
+Nodo anterior vecino 10.1.1.9 nodo actual 7
+Energy remaining at forwarding : 8.83197 node 7 time : 7.52111
+7.55079 Checking after sent paquet from 10.1.1.30 to 10.1.1.27
+Nodo anterior vecino 10.1.1.30 nodo actual 11
+Energy remaining at forwarding : 8.81789 node 11 time : 7.55079
+7.56182 Checking after sent paquet from 10.1.1.27 to 10.1.1.41
+Nodo anterior vecino 10.1.1.27 nodo actual 2
+Energy remaining at forwarding : 8.79285 node 2 time : 7.56182
+7.5866 Checking after sent paquet from 10.1.1.31 to 10.1.1.41
+Nodo anterior vecino 10.1.1.27 nodo actual 2
+Energy remaining at forwarding : 8.77307 node 2 time : 7.5866
+7.5937 Checking after sent paquet from 10.1.1.15 to 10.1.1.36
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 8.75829 node 6 time : 7.5937
+7.59621 Checking after sent paquet from 10.1.1.15 to 10.1.1.36
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 8.75627 node 6 time : 7.59621
+7.60438 Checking after sent paquet from 10.1.1.3 to 10.1.1.31
+Nodo anterior vecino 10.1.1.3 nodo actual 26
+Energy remaining at forwarding : 8.75856 node 26 time : 7.60438
+7.61402 Checking after sent paquet from 10.1.1.30 to 10.1.1.27
+Nodo anterior vecino 10.1.1.30 nodo actual 11
+Energy remaining at forwarding : 8.76455 node 11 time : 7.61402
+7.61886 Checking after sent paquet from 10.1.1.3 to 10.1.1.31
+Nodo anterior vecino 10.1.1.3 nodo actual 19
+Energy remaining at forwarding : 8.7539 node 19 time : 7.61886
+7.63108 Checking after sent paquet from 10.1.1.9 to 10.1.1.36
+Nodo anterior vecino 10.1.1.9 nodo actual 7
+Energy remaining at forwarding : 8.74123 node 7 time : 7.63108
+7.65039 Checking after sent paquet from 10.1.1.8 to 10.1.1.15
+Nodo anterior vecino 10.1.1.8 nodo actual 8
+Energy remaining at forwarding : 8.71962 node 8 time : 7.65039
+7.68869 Checking after sent paquet from 10.1.1.34 to 10.1.1.36
+Nodo anterior vecino 10.1.1.34 nodo actual 51
+Energy remaining at forwarding : 8.68317 node 51 time : 7.68869
+7.69658 Checking after sent paquet from 10.1.1.36 to 10.1.1.41
+Nodo anterior vecino 10.1.1.36 nodo actual 55
+Energy remaining at forwarding : 8.66979 node 55 time : 7.69658
+7.70238 Checking after sent paquet from 10.1.1.8 to 10.1.1.15
+Nodo anterior vecino 10.1.1.8 nodo actual 8
+Energy remaining at forwarding : 8.67683 node 8 time : 7.70238
+7.71553 Checking after sent paquet from 10.1.1.45 to 10.1.1.41
+Nodo anterior vecino 10.1.1.45 nodo actual 19
+Energy remaining at forwarding : 8.6739 node 19 time : 7.71553
+7.72191 Checking after sent paquet from 10.1.1.15 to 10.1.1.36
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 8.64713 node 6 time : 7.72191
+7.72564 Checking after sent paquet from 10.1.1.30 to 10.1.1.27
+Nodo anterior vecino 10.1.1.30 nodo actual 11
+Energy remaining at forwarding : 8.66842 node 11 time : 7.72564
+7.73062 Checking after sent paquet from 10.1.1.15 to 10.1.1.14
+Nodo anterior vecino 10.1.1.15 nodo actual 16
+Energy remaining at forwarding : 8.65754 node 16 time : 7.73062
+7.73122 Checking after sent paquet from 10.1.1.15 to 10.1.1.36
+Nodo anterior vecino 10.1.1.15 nodo actual 6
+Energy remaining at forwarding : 8.63926 node 6 time : 7.73122
+7.75078 Checking after sent paquet from 10.1.1.55 to 10.1.1.27
+Nodo anterior vecino 10.1.1.55 nodo actual 55
+Energy remaining at forwarding : 8.62383 node 55 time : 7.75078
+7.75405 Checking after sent paquet from 10.1.1.55 to 10.1.1.27
+Nodo anterior vecino 10.1.1.55 nodo actual 55
+Energy remaining at forwarding : 8.62133 node 55 time : 7.75405
+7.76048 Checking after sent paquet from 10.1.1.54 to 10.1.1.14
+Nodo anterior vecino 10.1.1.54 nodo actual 50
+Energy remaining at forwarding : 8.62398 node 50 time : 7.76048
+7.76388 Checking after sent paquet from 10.1.1.54 to 10.1.1.14
+Nodo anterior vecino 10.1.1.54 nodo actual 50
+Energy remaining at forwarding : 8.62124 node 50 time : 7.76388
+7.77735 Checking after sent paquet from 10.1.1.55 to 10.1.1.27
+Nodo anterior vecino 10.1.1.55 nodo actual 55
+Energy remaining at forwarding : 8.60162 node 55 time : 7.77735
+7.79136 Checking after sent paquet from 10.1.1.15 to 10.1.1.36
+Nodo anterior vecino 10.1.1.9 nodo actual 13
+Energy remaining at forwarding : 8.5985 node 13 time : 7.79136
+7.82447 Checking after sent paquet from 10.1.1.15 to 10.1.1.36
+Nodo anterior vecino 10.1.1.9 nodo actual 13
+Energy remaining at forwarding : 8.57037 node 13 time : 7.82447
+7.83463 Checking after sent paquet from 10.1.1.9 to 10.1.1.36
+Nodo anterior vecino 10.1.1.9 nodo actual 13
+Energy remaining at forwarding : 8.56261 node 13 time : 7.83463
+7.85941 Checking after sent paquet from 10.1.1.8 to 10.1.1.15
+Nodo anterior vecino 10.1.1.8 nodo actual 41
+Energy remaining at forwarding : 8.54766 node 41 time : 7.85941
+7.93296 Checking after sent paquet from 10.1.1.43 to 10.1.1.36
+Nodo anterior vecino 10.1.1.43 nodo actual 13
+Energy remaining at forwarding : 8.48161 node 13 time : 7.93296
+7.93461 Checking after sent paquet from 10.1.1.43 to 10.1.1.36
+Nodo anterior vecino 10.1.1.43 nodo actual 13
+Energy remaining at forwarding : 8.48055 node 13 time : 7.93461
+8.0692 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 27
+Energy remaining at forwarding : 8.35737 node 27 time : 8.0692
+8.11452 Checking after sent paquet from 10.1.1.38 to 10.1.1.10
+Nodo anterior vecino 10.1.1.57 nodo actual 40
+Energy remaining at forwarding : 8.33426 node 40 time : 8.11452
+8.12904 Checking after sent paquet from 10.1.1.41 to 10.1.1.38
+Nodo anterior vecino 10.1.1.41 nodo actual 56
+Energy remaining at forwarding : 8.32472 node 56 time : 8.12904
+8.12958 Checking after sent paquet from 10.1.1.41 to 10.1.1.38
+Nodo anterior vecino 10.1.1.27 nodo actual 19
+Energy remaining at forwarding : 8.33363 node 19 time : 8.12958
+8.13506 Checking after sent paquet from 10.1.1.41 to 10.1.1.38
+Nodo anterior vecino 10.1.1.41 nodo actual 2
+Energy remaining at forwarding : 8.31431 node 2 time : 8.13506
+8.15005 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 30
+Energy remaining at forwarding : 8.28691 node 30 time : 8.15005
+8.1637 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 42
+Energy remaining at forwarding : 8.28597 node 42 time : 8.1637
+8.16716 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 26
+Energy remaining at forwarding : 8.29436 node 26 time : 8.16716
+8.16875 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.43 nodo actual 15
+Energy remaining at forwarding : 8.2841 node 15 time : 8.16875
+8.1689 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 56
+Energy remaining at forwarding : 8.29165 node 56 time : 8.1689
+8.18128 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.16 nodo actual 24
+Energy remaining at forwarding : 8.2682 node 24 time : 8.18128
+8.18392 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.25 nodo actual 11
+Energy remaining at forwarding : 8.2907 node 11 time : 8.18392
+8.18481 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.12 nodo actual 49
+Energy remaining at forwarding : 8.25292 node 49 time : 8.18481
+8.18684 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 27
+Energy remaining at forwarding : 8.25487 node 27 time : 8.18684
+8.25171 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 56
+Energy remaining at forwarding : 8.22434 node 56 time : 8.25171
+8.2526 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.57 nodo actual 40
+Energy remaining at forwarding : 8.21831 node 40 time : 8.2526
+8.25406 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.41 nodo actual 17
+Energy remaining at forwarding : 8.21952 node 17 time : 8.25406
+8.3952 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 23
+Energy remaining at forwarding : 8.10224 node 23 time : 8.3952
+8.39662 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.24 nodo actual 35
+Energy remaining at forwarding : 8.10235 node 35 time : 8.39662
+8.4275 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 33
+Energy remaining at forwarding : 8.05471 node 33 time : 8.4275
+8.42855 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 8.08926 node 11 time : 8.42855
+8.43189 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 55
+Energy remaining at forwarding : 8.05847 node 55 time : 8.43189
+8.45153 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.56 nodo actual 2
+Energy remaining at forwarding : 8.05026 node 2 time : 8.45153
+8.45346 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.3 nodo actual 44
+Energy remaining at forwarding : 8.06859 node 44 time : 8.45346
+8.47926 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 46
+Energy remaining at forwarding : 8.02904 node 46 time : 8.47926
+8.48033 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.41 nodo actual 44
+Energy remaining at forwarding : 8.04701 node 44 time : 8.48033
+8.49731 Checking after sent paquet from 10.1.1.7 to 10.1.1.15
+Nodo anterior vecino 10.1.1.7 nodo actual 9
+Energy remaining at forwarding : 8.0081 node 9 time : 8.49731
+10.0386 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 27
+Energy remaining at forwarding : 6.73314 node 27 time : 10.0386
+Need new path, energy: 6.73314
+10.103 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 48
+Energy remaining at forwarding : 6.68913 node 48 time : 10.103
+Need new path, energy: 6.68913
+10.11 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 9
+Energy remaining at forwarding : 6.68567 node 9 time : 10.11
+Need new path, energy: 6.68567
+10.139 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 26
+Energy remaining at forwarding : 6.67553 node 26 time : 10.139
+Need new path, energy: 6.67553
+10.1406 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 56
+Energy remaining at forwarding : 6.67104 node 56 time : 10.1406
+Need new path, energy: 6.67104
+10.1527 Checking after sent paquet from 10.1.1.13 to 10.1.1.3
+Nodo anterior vecino 10.1.1.13 nodo actual 30
+Energy remaining at forwarding : 6.64104 node 30 time : 10.1527
+Need new path, energy: 6.64104
+10.182 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 27
+Energy remaining at forwarding : 6.61357 node 27 time : 10.182
+Need new path, energy: 6.61357
+10.2517 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 56
+Energy remaining at forwarding : 6.58301 node 56 time : 10.2517
+Need new path, energy: 6.58301
+10.2527 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.57 nodo actual 40
+Energy remaining at forwarding : 6.57143 node 40 time : 10.2527
+Need new path, energy: 6.57143
+10.2537 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.41 nodo actual 17
+Energy remaining at forwarding : 6.57716 node 17 time : 10.2537
+Need new path, energy: 6.57716
+10.3952 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 23
+Energy remaining at forwarding : 6.4596 node 23 time : 10.3952
+Need new path, energy: 6.4596
+10.3964 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.24 nodo actual 35
+Energy remaining at forwarding : 6.46085 node 35 time : 10.3964
+Need new path, energy: 6.46085
+10.4011 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.36 nodo actual 20
+Energy remaining at forwarding : 6.4402 node 20 time : 10.4011
+Need new path, energy: 6.4402
+10.4275 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 33
+Energy remaining at forwarding : 6.40766 node 33 time : 10.4275
+Need new path, energy: 6.40766
+10.4285 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 6.44548 node 11 time : 10.4285
+Need new path, energy: 6.44548
+10.4299 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.12 nodo actual 55
+Energy remaining at forwarding : 6.4181 node 55 time : 10.4299
+Need new path, energy: 6.4181
+10.4309 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.56 nodo actual 2
+Energy remaining at forwarding : 6.42251 node 2 time : 10.4309
+Need new path, energy: 6.42251
+10.4793 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 46
+Energy remaining at forwarding : 6.38708 node 46 time : 10.4793
+Need new path, energy: 6.38708
+11.1325 Checking after sent paquet from 10.1.1.15 to 10.1.1.36
+Nodo anterior vecino 10.1.1.15 nodo actual 13
+Energy remaining at forwarding : 5.84651 node 13 time : 11.1325
+Need new path, energy: 5.84651
+11.5804 Checking after sent paquet from 10.1.1.60 to 10.1.1.54
+Nodo anterior vecino 10.1.1.60 nodo actual 32
+Energy remaining at forwarding : 5.49663 node 32 time : 11.5804
+Need new path, energy: 5.49663
+12.0386 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 27
+Energy remaining at forwarding : 5.08935 node 27 time : 12.0386
+Need new path, energy: 5.08935
+12.1277 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 28
+Energy remaining at forwarding : 5.01944 node 28 time : 12.1277
+Need new path, energy: 5.01944
+12.1943 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 48
+Energy remaining at forwarding : 4.96858 node 48 time : 12.1943
+Need new path, energy: 4.96858
+12.2499 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 27
+Energy remaining at forwarding : 4.91201 node 27 time : 12.2499
+Need new path, energy: 4.91201
+12.2525 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.20 nodo actual 56
+Energy remaining at forwarding : 4.93553 node 56 time : 12.2525
+Need new path, energy: 4.93553
+12.2541 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.57 nodo actual 40
+Energy remaining at forwarding : 4.92476 node 40 time : 12.2541
+Need new path, energy: 4.92476
+12.3952 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 23
+Energy remaining at forwarding : 4.81701 node 23 time : 12.3952
+Need new path, energy: 4.81701
+12.3962 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.24 nodo actual 35
+Energy remaining at forwarding : 4.82115 node 35 time : 12.3962
+Need new path, energy: 4.82115
+12.4085 Checking after sent paquet from 10.1.1.17 to 10.1.1.7
+Nodo anterior vecino 10.1.1.17 nodo actual 5
+Energy remaining at forwarding : 4.79409 node 5 time : 12.4085
+Need new path, energy: 4.79409
+12.4345 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 33
+Energy remaining at forwarding : 4.75334 node 33 time : 12.4345
+Need new path, energy: 4.75334
+12.4373 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 11
+Energy remaining at forwarding : 4.79528 node 11 time : 12.4373
+Need new path, energy: 4.79528
+12.4388 Checking after sent paquet from 10.1.1.11 to 10.1.1.1
+Nodo anterior vecino 10.1.1.11 nodo actual 55
+Energy remaining at forwarding : 4.76407 node 55 time : 12.4388
+Need new path, energy: 4.76407
+12.5397 Checking after sent paquet from 10.1.1.12 to 10.1.1.48
+Nodo anterior vecino 10.1.1.12 nodo actual 51
+Energy remaining at forwarding : 4.69005 node 51 time : 12.5397
+Need new path, energy: 4.69005
+12.5469 Checking after sent paquet from 10.1.1.12 to 10.1.1.13
+Nodo anterior vecino 10.1.1.12 nodo actual 30
+Energy remaining at forwarding : 4.67081 node 30 time : 12.5469
+Need new path, energy: 4.67081
+12.5825 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 46
+Energy remaining at forwarding : 4.65873 node 46 time : 12.5825
+Need new path, energy: 4.65873
+12.5841 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.47 nodo actual 0
+Energy remaining at forwarding : 4.67826 node 0 time : 12.5841
+Need new path, energy: 4.67826
+13.2064 Checking after sent paquet from 10.1.1.40 to 10.1.1.42
+Nodo anterior vecino 10.1.1.17 nodo actual 9
+Energy remaining at forwarding : 4.14586 node 9 time : 13.2064
+Need new path, energy: 4.14586
+13.2075 Checking after sent paquet from 10.1.1.10 to 10.1.1.40
+Nodo anterior vecino 10.1.1.10 nodo actual 16
+Energy remaining at forwarding : 4.14702 node 16 time : 13.2075
+Need new path, energy: 4.14702
+13.2718 Checking after sent paquet from 10.1.1.7 to 10.1.1.36
+Nodo anterior vecino 10.1.1.7 nodo actual 10
+Energy remaining at forwarding : 4.09224 node 10 time : 13.2718
+Need new path, energy: 4.09224
+13.2764 Checking after sent paquet from 10.1.1.40 to 10.1.1.49
+Nodo anterior vecino 10.1.1.40 nodo actual 14
+Energy remaining at forwarding : 4.11107 node 14 time : 13.2764
+Need new path, energy: 4.11107
+13.3528 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 19
+Energy remaining at forwarding : 4.03811 node 19 time : 13.3528
+Need new path, energy: 4.03811
+13.3542 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 19
+Energy remaining at forwarding : 4.03714 node 19 time : 13.3542
+Need new path, energy: 4.03714
+13.3624 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 19
+Energy remaining at forwarding : 4.03026 node 19 time : 13.3624
+Need new path, energy: 4.03026
+13.3705 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 19
+Energy remaining at forwarding : 4.02348 node 19 time : 13.3705
+Need new path, energy: 4.02348
+13.3865 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 19
+Energy remaining at forwarding : 4.01019 node 19 time : 13.3865
+Need new path, energy: 4.01019
+13.3876 Checking after sent paquet from 10.1.1.43 to 10.1.1.8
+Nodo anterior vecino 10.1.1.43 nodo actual 48
+Energy remaining at forwarding : 3.98063 node 48 time : 13.3876
+Need new path, energy: 3.98063
+13.3963 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 19
+Energy remaining at forwarding : 4.00219 node 19 time : 13.3963
+Need new path, energy: 4.00219
+13.4018 Checking after sent paquet from 10.1.1.27 to 10.1.1.28
+Nodo anterior vecino 10.1.1.27 nodo actual 7
+Energy remaining at forwarding : 3.97813 node 7 time : 13.4018
+Need new path, energy: 3.97813
+13.4206 Checking after sent paquet from 10.1.1.44 to 10.1.1.43
+Nodo anterior vecino 10.1.1.44 nodo actual 53
+Energy remaining at forwarding : 3.97185 node 53 time : 13.4206
+Need new path, energy: 3.97185
+13.4664 Checking after sent paquet from 10.1.1.43 to 10.1.1.11
+Nodo anterior vecino 10.1.1.43 nodo actual 27
+Energy remaining at forwarding : 3.89461 node 27 time : 13.4664
+Need new path, energy: 3.89461
+13.5423 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 54
+Energy remaining at forwarding : 3.88232 node 54 time : 13.5423
+Need new path, energy: 3.88232
+13.5547 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 4
+Energy remaining at forwarding : 3.85997 node 4 time : 13.5547
+Need new path, energy: 3.85997
+13.5595 Checking after sent paquet from 10.1.1.49 to 10.1.1.28
+Nodo anterior vecino 10.1.1.49 nodo actual 7
+Energy remaining at forwarding : 3.84176 node 7 time : 13.5595
+Need new path, energy: 3.84176
+13.59 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 46
+Energy remaining at forwarding : 3.8254 node 46 time : 13.59
+Need new path, energy: 3.8254
+13.5906 Checking after sent paquet from 10.1.1.56 to 10.1.1.52
+Nodo anterior vecino 10.1.1.56 nodo actual 4
+Energy remaining at forwarding : 3.82987 node 4 time : 13.5906
+Need new path, energy: 3.82987
+13.7489 Checking after sent paquet from 10.1.1.7 to 10.1.1.25
+Nodo anterior vecino 10.1.1.7 nodo actual 35
+Energy remaining at forwarding : 3.69879 node 35 time : 13.7489
+Need new path, energy: 3.69879
+14.0386 Checking after sent paquet from 10.1.1.16 to 10.1.1.6
+Nodo anterior vecino 10.1.1.16 nodo actual 27
+Energy remaining at forwarding : 3.41687 node 27 time : 14.0386
+Need new path, energy: 3.41687
+14.1007 Checking after sent paquet from 10.1.1.15 to 10.1.1.5
+Nodo anterior vecino 10.1.1.15 nodo actual 28
+Energy remaining at forwarding : 3.36919 node 28 time : 14.1007
+Need new path, energy: 3.36919
+14.139 Checking after sent paquet from 10.1.1.12 to 10.1.1.2
+Nodo anterior vecino 10.1.1.12 nodo actual 49
+Energy remaining at forwarding : 3.33131 node 49 time : 14.139
+Need new path, energy: 3.33131
+14.1879 Checking after sent paquet from 10.1.1.36 to 10.1.1.55
+Nodo anterior vecino 10.1.1.36 nodo actual 4
+Energy remaining at forwarding : 3.33489 node 4 time : 14.1879
+Need new path, energy: 3.33489
+14.1898 Checking after sent paquet from 10.1.1.43 to 10.1.1.7
+Nodo anterior vecino 10.1.1.43 nodo actual 43
+Energy remaining at forwarding : 3.33285 node 43 time : 14.1898
+Need new path, energy: 3.33285
+14.2375 Checking after sent paquet from 10.1.1.41 to 10.1.1.56
+Nodo anterior vecino 10.1.1.41 nodo actual 33
+Energy remaining at forwarding : 3.24654 node 33 time : 14.2375
+Need new path, energy: 3.24654
+14.2917 Checking after sent paquet from 10.1.1.20 to 10.1.1.5
+Nodo anterior vecino 10.1.1.20 nodo actual 35
+Energy remaining at forwarding : 3.25492 node 35 time : 14.2917
+Need new path, energy: 3.25492
+14.31 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.18 nodo actual 16
+Energy remaining at forwarding : 3.22812 node 16 time : 14.31
+Need new path, energy: 3.22812
+14.324 Checking after sent paquet from 10.1.1.28 to 10.1.1.41
+Nodo anterior vecino 10.1.1.28 nodo actual 42
+Energy remaining at forwarding : 3.20561 node 42 time : 14.324
+Need new path, energy: 3.20561
+14.3352 Checking after sent paquet from 10.1.1.18 to 10.1.1.8
+Nodo anterior vecino 10.1.1.17 nodo actual 33
+Energy remaining at forwarding : 3.16229 node 33 time : 14.3352
+Need new path, energy: 3.16229
+14.3668 Checking after sent paquet from 10.1.1.14 to 10.1.1.10
+Nodo anterior vecino 10.1.1.14 nodo actual 8
+Energy remaining at forwarding : 3.1627 node 8 time : 14.3668
+Need new path, energy: 3.1627
+14.3722 Checking after sent paquet from 10.1.1.14 to 10.1.1.10
+Nodo anterior vecino 10.1.1.14 nodo actual 16
+Energy remaining at forwarding : 3.17752 node 16 time : 14.3722
+Need new path, energy: 3.17752
+14.3966 Checking after sent paquet from 10.1.1.14 to 10.1.1.6
+Nodo anterior vecino 10.1.1.14 nodo actual 42
+Energy remaining at forwarding : 3.14383 node 42 time : 14.3966
+Need new path, energy: 3.14383
+14.4147 Checking after sent paquet from 10.1.1.51 to 10.1.1.5
+Nodo anterior vecino 10.1.1.51 nodo actual 43
+Energy remaining at forwarding : 3.14127 node 43 time : 14.4147
+Need new path, energy: 3.14127
+14.4341 Checking after sent paquet from 10.1.1.14 to 10.1.1.10
+Nodo anterior vecino 10.1.1.43 nodo actual 16
+Energy remaining at forwarding : 3.12721 node 16 time : 14.4341
+Need new path, energy: 3.12721
+14.4411 Checking after sent paquet from 10.1.1.11 to 10.1.1.14
+Nodo anterior vecino 10.1.1.11 nodo actual 42
+Energy remaining at forwarding : 3.10549 node 42 time : 14.4411
+Need new path, energy: 3.10549
+14.4888 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.19 nodo actual 23
+Energy remaining at forwarding : 3.07444 node 23 time : 14.4888
+Need new path, energy: 3.07444
+14.4917 Checking after sent paquet from 10.1.1.11 to 10.1.1.14
+Nodo anterior vecino 10.1.1.46 nodo actual 42
+Energy remaining at forwarding : 3.06314 node 42 time : 14.4917
+Need new path, energy: 3.06314
+14.4982 Checking after sent paquet from 10.1.1.14 to 10.1.1.10
+Nodo anterior vecino 10.1.1.46 nodo actual 16
+Energy remaining at forwarding : 3.07335 node 16 time : 14.4982
+Need new path, energy: 3.07335
+14.5103 Checking after sent paquet from 10.1.1.3 to 10.1.1.5
+Nodo anterior vecino 10.1.1.3 nodo actual 30
+Energy remaining at forwarding : 3.0301 node 30 time : 14.5103
+Need new path, energy: 3.0301
+14.5406 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.14 nodo actual 46
+Energy remaining at forwarding : 3.03259 node 46 time : 14.5406
+Need new path, energy: 3.03259
+14.5488 Checking after sent paquet from 10.1.1.28 to 10.1.1.51
+Nodo anterior vecino 10.1.1.28 nodo actual 13
+Energy remaining at forwarding : 3.00713 node 13 time : 14.5488
+Need new path, energy: 3.00713
+14.5562 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.24 nodo actual 10
+Energy remaining at forwarding : 3.01172 node 10 time : 14.5562
+Need new path, energy: 3.01172
+14.5562 Checking after sent paquet from 10.1.1.14 to 10.1.1.4
+Nodo anterior vecino 10.1.1.47 nodo actual 0
+Energy remaining at forwarding : 3.0469 node 0 time : 14.5562
+Need new path, energy: 3.0469
+14.5652 Checking after sent paquet from 10.1.1.19 to 10.1.1.9
+Nodo anterior vecino 10.1.1.11 nodo actual 24
+Energy remaining at forwarding : 2.97861 node 24 time : 14.5652
+Need new path, energy: 2.97861
+14.5921 Checking after sent paquet from 10.1.1.31 to 10.1.1.4
+Nodo anterior vecino 10.1.1.31 nodo actual 19
+Energy remaining at forwarding : 3.00907 node 19 time : 14.5921
+Need new path, energy: 3.00907
+14.7515 Checking after sent paquet from 10.1.1.21 to 10.1.1.29
+Nodo anterior vecino 10.1.1.21 nodo actual 8
+Energy remaining at forwarding : 2.83464 node 8 time : 14.7515
+Need new path, energy: 2.83464
+14.7926 Checking after sent paquet from 10.1.1.15 to 10.1.1.29
+Nodo anterior vecino 10.1.1.15 nodo actual 16
+Energy remaining at forwarding : 2.82696 node 16 time : 14.7926
+Need new path, energy: 2.82696
+14.7935 Checking after sent paquet from 10.1.1.15 to 10.1.1.29
+Nodo anterior vecino 10.1.1.15 nodo actual 16
+Energy remaining at forwarding : 2.82635 node 16 time : 14.7935
+Need new path, energy: 2.82635
+14.7947 Checking after sent paquet from 10.1.1.15 to 10.1.1.29
+Nodo anterior vecino 10.1.1.15 nodo actual 42
+Energy remaining at forwarding : 2.80468 node 42 time : 14.7947
+Need new path, energy: 2.80468
+14.7968 Checking after sent paquet from 10.1.1.15 to 10.1.1.29
+Nodo anterior vecino 10.1.1.15 nodo actual 42
+Energy remaining at forwarding : 2.80318 node 42 time : 14.7968
+Need new path, energy: 2.80318
+14.924 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.48 nodo actual 12
+Energy remaining at forwarding : 2.74765 node 12 time : 14.924
+Need new path, energy: 2.74765
+14.925 Checking after sent paquet from 10.1.1.20 to 10.1.1.10
+Nodo anterior vecino 10.1.1.13 nodo actual 29
+Energy remaining at forwarding : 2.71151 node 29 time : 14.925
+Need new path, energy: 2.71151
+14.9461 Checking after sent paquet from 10.1.1.34 to 10.1.1.6
+Nodo anterior vecino 10.1.1.34 nodo actual 27
+Energy remaining at forwarding : 2.65164 node 27 time : 14.9461
+Need new path, energy: 2.65164
+15.2626 Checking after sent paquet from 10.1.1.46 to 10.1.1.6
+Nodo anterior vecino 10.1.1.46 nodo actual 13
+Energy remaining at forwarding : 2.40522 node 13 time : 15.2626
+Need new path, energy: 2.40522
+15.3447 Checking after sent paquet from 10.1.1.37 to 10.1.1.5
+Nodo anterior vecino 10.1.1.37 nodo actual 28
+Energy remaining at forwarding : 2.31511 node 28 time : 15.3447
+Need new path, energy: 2.31511
+15.3791 Checking after sent paquet from 10.1.1.20 to 10.1.1.48
+Nodo anterior vecino 10.1.1.20 nodo actual 51
+Energy remaining at forwarding : 2.32739 node 51 time : 15.3791
+Need new path, energy: 2.32739
+15.4038 Checking after sent paquet from 10.1.1.11 to 10.1.1.48
+Nodo anterior vecino 10.1.1.11 nodo actual 20
+Energy remaining at forwarding : 2.27559 node 20 time : 15.4038
+Need new path, energy: 2.27559
+15.4907 Checking after sent paquet from 10.1.1.24 to 10.1.1.30
+Nodo anterior vecino 10.1.1.24 nodo actual 19
+Energy remaining at forwarding : 2.26851 node 19 time : 15.4907
+Need new path, energy: 2.26851
+Node cannot forward because 49 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 41 is dead!
+Node cannot forward because 41 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 41 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 52 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 52 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 52 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 52 is dead!
+Node cannot forward because 41 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 41 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 52 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 41 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 38 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 41 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 0 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 16 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 5 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 23 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 38 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 32 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 52 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 59 is dead!
+Node cannot forward because 55 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 14 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 29 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 35 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 47 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 21 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 50 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 26 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 6 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 25 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 17 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 58 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 4 is dead!
+Node cannot forward because 12 is dead!
+Node cannot forward because 49 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 48 is dead!
+Node cannot forward because 42 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 24 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 15 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 57 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 19 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 8 is dead!
+Node cannot forward because 40 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 45 is dead!
+Node cannot forward because 51 is dead!
+Node cannot forward because 13 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 39 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 11 is dead!
+Node cannot forward because 28 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 9 is dead!
+Node cannot forward because 54 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 18 is dead!
+Node cannot forward because 43 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 3 is dead!
+Node cannot forward because 31 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 33 is dead!
+Node cannot forward because 56 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 52 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 7 is dead!
+Node cannot forward because 37 is dead!
+Node cannot forward because 53 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 46 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 2 is dead!
+Node cannot forward because 22 is dead!
+Node cannot forward because 1 is dead!
+Node cannot forward because 36 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 34 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 27 is dead!
+Node cannot forward because 44 is dead!
+Node cannot forward because 30 is dead!
+Node cannot forward because 10 is dead!
+Node cannot forward because 20 is dead!
+Node cannot forward because 37 is dead!
++120.000000000s -1 test_120_disable/simulation5
+Creating 60 nodes .
+10 nodes will receive.
+Starting simulation for 120 s ...

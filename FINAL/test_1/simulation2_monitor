@@ -1,0 +1,2 @@
+ThroughputTotal,DelayAve,DataRatioPacket,TotalEnergyConsumed,TotalTxPackets,TotalRxPackets,TotalLost,RemainingEnergy
+86.0625,0.0959751,91.3352,789.685,15234,13670,1320,110.315
