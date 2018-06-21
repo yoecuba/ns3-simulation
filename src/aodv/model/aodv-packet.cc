@@ -74,11 +74,9 @@ namespace ns3 {
                 case AODVTYPE_RREP:
                 case AODVTYPE_RERR:
                 case AODVTYPE_RREP_ACK:
-
-                    //Energy Enhance
-                    //*****************
-                case AODVTYPE_REVR_RREQ:
-                    //*****************
+                case AODVTYPE_VERIFY:
+                case AODVTYPE_CHECKVRF:
+                case AODVTYPE_FINALREPLY:
                 {
                     m_type = (MessageType) type;
                     break;
@@ -114,14 +112,21 @@ namespace ns3 {
                     os << "RREP_ACK";
                     break;
                 }
-                    //*****************
-                case AODVTYPE_REVR_RREQ:
+                case AODVTYPE_VERIFY:
                 {
-                    os << "REVR_RREQ";
+                    os << "VERIFY";
                     break;
                 }
-                    //*****************
-
+                case AODVTYPE_CHECKVRF:
+                {
+                    os << "CHECKVRF";
+                    break;
+                }
+                case AODVTYPE_FINALREPLY:
+                {
+                    os << "FINALREPLY";
+                    break;
+                }
                 default:
                     os << "UNKNOWN_TYPE";
             }
@@ -607,68 +612,193 @@ namespace ns3 {
 
         //*******************************************************       
         //-----------------------------------------------------------------------------
-        // REVR_RREQ
+        // AODVTYPE_VERIFY
         //-----------------------------------------------------------------------------
-        
-        RevrRreqHeader::RevrRreqHeader()
-        : m_reserved(0){
+
+        VerifyHeader::VerifyHeader()
+        : m_reserved(0) {
         }
 
-        NS_OBJECT_ENSURE_REGISTERED(RevrRreqHeader);
+        NS_OBJECT_ENSURE_REGISTERED(VerifyHeader);
 
         TypeId
-        RevrRreqHeader::GetTypeId() {
-            static TypeId tid = TypeId("ns3::aodv::RevrRreqHeader")
+        VerifyHeader::GetTypeId() {
+            static TypeId tid = TypeId("ns3::aodv::VerifyHeader")
                     .SetParent<Header> ()
                     .SetGroupName("Aodv")
-                    .AddConstructor<RevrRreqHeader> ()
+                    .AddConstructor<VerifyHeader> ()
                     ;
             return tid;
         }
 
         TypeId
-        RevrRreqHeader::GetInstanceTypeId() const {
+        VerifyHeader::GetInstanceTypeId() const {
             return GetTypeId();
         }
 
         uint32_t
-        RevrRreqHeader::GetSerializedSize() const {
+        VerifyHeader::GetSerializedSize() const {
             return 5;
         }
 
         void
-        RevrRreqHeader::Serialize(Buffer::Iterator i) const {
+        VerifyHeader::Serialize(Buffer::Iterator i) const {
             i.WriteU8(m_reserved);
-            WriteTo(i, m_dst);
+            WriteTo(i, m_orig);
         }
 
         uint32_t
-        RevrRreqHeader::Deserialize(Buffer::Iterator start) {
+        VerifyHeader::Deserialize(Buffer::Iterator start) {
             Buffer::Iterator i = start;
             m_reserved = i.ReadU8();
-            ReadFrom(i, m_dst);
+            ReadFrom(i, m_orig);
             uint32_t dist = i.GetDistanceFrom(start);
             NS_ASSERT(dist == GetSerializedSize());
             return dist;
         }
 
         void
-        RevrRreqHeader::Print(std::ostream &os) const {
-            os << "should send RREQ to destination: ipv4 " << m_dst;
+        VerifyHeader::Print(std::ostream &os) const {
+            os << "sending a verify from: ipv4 " << m_orig;
         }
 
         bool
-        RevrRreqHeader::operator==(RevrRreqHeader const & o) const {
-            return (m_reserved == o.m_reserved && m_dst == o.m_dst);
+        VerifyHeader::operator==(VerifyHeader const & o) const {
+            return (m_reserved == o.m_reserved && m_orig == o.m_orig);
         }
 
         std::ostream &
-        operator<<(std::ostream & os, RevrRreqHeader const & h) {
+        operator<<(std::ostream & os, VerifyHeader const & h) {
             h.Print(os);
             return os;
         }
 
 
         //*******************************************************
+        //*******************************************************       
+        //-----------------------------------------------------------------------------
+        // AODVTYPE_CHECKVRF
+        //-----------------------------------------------------------------------------
+
+        CheckVrfHeader::CheckVrfHeader()
+        : m_reserved(0) {
+        }
+
+        NS_OBJECT_ENSURE_REGISTERED(CheckVrfHeader);
+
+        TypeId
+        CheckVrfHeader::GetTypeId() {
+            static TypeId tid = TypeId("ns3::aodv::CheckVrfHeader")
+                    .SetParent<Header> ()
+                    .SetGroupName("Aodv")
+                    .AddConstructor<CheckVrfHeader> ()
+                    ;
+            return tid;
+        }
+
+        TypeId
+        CheckVrfHeader::GetInstanceTypeId() const {
+            return GetTypeId();
+        }
+
+        uint32_t
+        CheckVrfHeader::GetSerializedSize() const {
+            return 1;
+        }
+
+        void
+        CheckVrfHeader::Serialize(Buffer::Iterator i) const {
+            i.WriteU8(m_reserved);
+        }
+
+        uint32_t
+        CheckVrfHeader::Deserialize(Buffer::Iterator start) {
+            Buffer::Iterator i = start;
+            m_reserved = i.ReadU8();
+            uint32_t dist = i.GetDistanceFrom(start);
+            NS_ASSERT(dist == GetSerializedSize());
+            return dist;
+        }
+
+        void
+        CheckVrfHeader::Print(std::ostream &os) const {
+        }
+
+        bool
+        CheckVrfHeader::operator==(CheckVrfHeader const & o) const {
+            return (m_reserved == o.m_reserved);
+        }
+
+        std::ostream &
+        operator<<(std::ostream & os, CheckVrfHeader const & h) {
+            h.Print(os);
+            return os;
+        }
+
+
+        //*******************************************************
+        //*******************************************************       
+        //-----------------------------------------------------------------------------
+        // AODVTYPE_FINALREPLY
+        //-----------------------------------------------------------------------------
+
+        FinalReplyHeader::FinalReplyHeader()
+        : m_reserved(0) {
+        }
+
+        NS_OBJECT_ENSURE_REGISTERED(FinalReplyHeader);
+
+        TypeId
+        FinalReplyHeader::GetTypeId() {
+            static TypeId tid = TypeId("ns3::aodv::FinalReplyHeader")
+                    .SetParent<Header> ()
+                    .SetGroupName("Aodv")
+                    .AddConstructor<FinalReplyHeader> ()
+                    ;
+            return tid;
+        }
+
+        TypeId
+        FinalReplyHeader::GetInstanceTypeId() const {
+            return GetTypeId();
+        }
+
+        uint32_t
+        FinalReplyHeader::GetSerializedSize() const {
+            return 1;
+        }
+
+        void
+        FinalReplyHeader::Serialize(Buffer::Iterator i) const {
+            i.WriteU8(m_reserved);
+        }
+
+        uint32_t
+        FinalReplyHeader::Deserialize(Buffer::Iterator start) {
+            Buffer::Iterator i = start;
+            m_reserved = i.ReadU8();
+            uint32_t dist = i.GetDistanceFrom(start);
+            NS_ASSERT(dist == GetSerializedSize());
+            return dist;
+        }
+
+        void
+        FinalReplyHeader::Print(std::ostream &os) const {
+
+        }
+
+        bool
+        FinalReplyHeader::operator==(FinalReplyHeader const & o) const {
+            return (m_reserved == o.m_reserved);
+        }
+
+        std::ostream &
+        operator<<(std::ostream & os, FinalReplyHeader const & h) {
+            h.Print(os);
+            return os;
+        }
+        //*******************************************************
+
+
     }
 }

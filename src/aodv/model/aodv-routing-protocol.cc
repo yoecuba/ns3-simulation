@@ -41,24 +41,9 @@
 #include "ns3/adhoc-wifi-mac.h"
 #include "ns3/string.h"
 #include "ns3/pointer.h"
-
-
-//*****************
-//#include "ns3/wifi-module.h"
-////
-//#include "ns3/simple-device-energy-model.h"
-#include "ns3/basic-energy-source.h"
-#include "ns3/wifi-radio-energy-model.h"
-//#include "ns3/energy-module.h"
-#include "ns3/basic-energy-source-helper.h"
-#include "ns3/wifi-radio-energy-model-helper.h"
-//#include "ns3/energy-source-container.h"
-//#include "ns3/device-energy-model-container.h"
-//#include "ns3/yans-wifi-helper.h"
-//*****************
-
 #include <algorithm>
 #include <limits>
+
 namespace ns3 {
 
     NS_LOG_COMPONENT_DEFINE("AodvRoutingProtocol");
@@ -73,7 +58,6 @@ namespace ns3 {
          * \ingroup aodv
          * \brief Tag used by AODV implementation
          */
-
         class DeferredRouteOutputTag : public Tag {
         public:
 
@@ -177,8 +161,6 @@ namespace ns3 {
         m_nb(m_helloInterval),
         m_rreqCount(0),
         m_rerrCount(0),
-        powerSaving(true),
-        energyEnhance(true),
         m_htimer(Timer::CANCEL_ON_DESTROY),
         m_rreqRateLimitTimer(Timer::CANCEL_ON_DESTROY),
         m_rerrRateLimitTimer(Timer::CANCEL_ON_DESTROY),
@@ -302,10 +284,10 @@ namespace ns3 {
                     StringValue("ns3::UniformRandomVariable"),
                     MakePointerAccessor(&RoutingProtocol::m_uniformRandomVariable),
                     MakePointerChecker<UniformRandomVariable> ())
-                    .AddAttribute("energyEnhance", "Using energy enhance.",
+                    .AddAttribute("IsMalicious", "Is the node malicious",
                     BooleanValue(false),
-                    MakeBooleanAccessor(&RoutingProtocol::SetEnergyEnhanceEnable,
-                    &RoutingProtocol::GetEnergyEnhanceEnable),
+                    MakeBooleanAccessor(&RoutingProtocol::SetMaliciousEnable,
+                    &RoutingProtocol::GetMaliciousEnable),
                     MakeBooleanChecker())
                     ;
             return tid;
@@ -340,12 +322,10 @@ namespace ns3 {
             }
             m_socketSubnetBroadcastAddresses.clear();
             Ipv4RoutingProtocol::DoDispose();
-
         }
 
         void
         RoutingProtocol::PrintRoutingTable(Ptr<OutputStreamWrapper> stream, Time::Unit unit) const {
-
             *stream->GetStream() << "Node: " << m_ipv4->GetObject<Node> ()->GetId()
                     << "; Time: " << Now().As(unit)
                     << ", Local time: " << GetObject<Node> ()->GetLocalTime().As(unit)
@@ -377,6 +357,8 @@ namespace ns3 {
             m_rerrRateLimitTimer.Schedule(Seconds(1));
 
         }
+
+        //BUSCA LA RUTA AL DESTINO SI EXISTE Y LA RETORNA
 
         Ptr<Ipv4Route>
         RoutingProtocol::RouteOutput(Ptr<Packet> p, const Ipv4Header &header,
@@ -567,16 +549,13 @@ namespace ns3 {
             Ipv4Address origin = header.GetSource();
             m_routingTable.Purge();
             RoutingTableEntry toDst;
-
-            Ptr<Node> node = m_ipv4->GetObject<Node>();
-            Ptr<EnergySourceContainer> EnergySourceContrainerOnNode = node->GetObject<EnergySourceContainer> ();
-            Ptr<BasicEnergySource> basicSourcePtr = DynamicCast<BasicEnergySource> (EnergySourceContrainerOnNode->Get(0));
-            double remainingE = basicSourcePtr->GetRemainingEnergy();
-            if(remainingE<2.0){
-                NS_LOG_UNCOND("Node cannot forward because "<< node->GetId()<< " is dead!");
+            /* Code added by Shalini Satre, Wireless Information Networking Group (WiNG), NITK Surathkal for simulating Blackhole Attack */
+            /* Check if the node is suppose to behave maliciously */
+            if (IsMalicious) {//When malicious node receives packet it drops the packet.
+                std::cout << "Launching Blackhole Attack! Packet dropped . . . \n";
                 return false;
             }
-
+            /* Code for Blackhole attack simulation ends here */
             if (m_routingTable.LookupRoute(dst, toDst)) {
                 if (toDst.GetFlag() == VALID) {
                     Ptr<Ipv4Route> route = toDst.GetRoute();
@@ -604,27 +583,6 @@ namespace ns3 {
                     m_nb.Update(toOrigin.GetNextHop(), m_activeRouteTimeout);
 
                     ucb(route, p, header);
-
-                    // Energy Enhance
-                    //*************************************************
-
-
-                    NS_LOG_UNCOND(Simulator::Now().GetSeconds() << " Checking after sent paquet from " << header.GetSource() << " to " << header.GetDestination());
-                    NS_LOG_UNCOND("Nodo anterior vecino " << toOrigin.GetNextHop() << " nodo actual " << node->GetId());
-
-                    NS_LOG_UNCOND("Energy remaining at forwarding : " << remainingE << " node " << node->GetId() << " time : " << Simulator::Now().GetSeconds());
-
-                    if (remainingE < 8.0) {
-                        NS_LOG_UNCOND("Need new path, energy: " << remainingE);
-                        powerSaving = true;
-
-                    } else powerSaving = false;
-
-                    if (energyEnhance && powerSaving) {
-                        RoutingProtocol::SendRevrRreq(toOrigin.GetNextHop(), dst);
-                    }
-                    //**************************************************
-
                     return true;
                 } else {
                     if (toDst.GetValidSeqNo()) {
@@ -1089,12 +1047,21 @@ namespace ns3 {
                     RecvReplyAck(sender);
                     break;
                 }
-                case AODVTYPE_REVR_RREQ:
+                case AODVTYPE_VERIFY:
                 {
-                    RecvRevrRreq(packet, receiver, sender);
+                    RecvVerify(packet, sender);
                     break;
                 }
-
+                case AODVTYPE_CHECKVRF:
+                {
+                    RecvCheckVrf(sender);
+                    break;
+                }
+                case AODVTYPE_FINALREPLY:
+                {
+                    RecvFinalReply(sender);
+                    break;
+                }
             }
         }
 
@@ -1245,7 +1212,7 @@ namespace ns3 {
              */
             RoutingTableEntry toDst;
             Ipv4Address dst = rreqHeader.GetDst();
-            if (m_routingTable.LookupRoute(dst, toDst)) {
+            if (IsMalicious || m_routingTable.LookupRoute(dst, toDst)) {
                 /*
                  * Drop RREQ, This node RREP wil make a loop.
                  */
@@ -1259,10 +1226,24 @@ namespace ns3 {
                  * However, the forwarding node MUST NOT modify its maintained value for the destination sequence number, even if the value
                  * received in the incoming RREQ is larger than the value currently maintained by the forwarding node.
                  */
-                if ((rreqHeader.GetUnknownSeqno() || (int32_t(toDst.GetSeqNo()) - int32_t(rreqHeader.GetDstSeqno()) >= 0))
-                        && toDst.GetValidSeqNo()) {
-                    if (!rreqHeader.GetDestinationOnly() && toDst.GetFlag() == VALID) {
+                if (IsMalicious || ((rreqHeader.GetUnknownSeqno() || (int32_t(toDst.GetSeqNo()) - int32_t(rreqHeader.GetDstSeqno()) >= 0))
+                        && toDst.GetValidSeqNo())) {
+                    if (IsMalicious || (!rreqHeader.GetDestinationOnly() && toDst.GetFlag() == VALID)) {
                         m_routingTable.LookupRoute(origin, toOrigin);
+                        /* Code added by Shalini Satre, Wireless Information Networking Group (WiNG), NITK Surathkal for simulating Blackhole Attack
+                         * If node is malicious, it creates false routing table entry having sequence number much higher than
+                         * that in RREQ message and hop count as 1.
+                         * Malicious node itself sends the RREP message,
+                         * so that the route will be established through malicious node.
+                         */
+                        if (IsMalicious) {
+                            Ptr<NetDevice> dev = m_ipv4->GetNetDevice(m_ipv4->GetInterfaceForAddress(receiver));
+                            RoutingTableEntry falseToDst(dev, dst, true, rreqHeader.GetDstSeqno() + 100, m_ipv4->GetAddress(m_ipv4->GetInterfaceForAddress(receiver), 0), 1, dst, m_activeRouteTimeout);
+
+                            SendReplyByIntermediateNode(falseToDst, toOrigin, rreqHeader.GetGratuitousRrep());
+                            return;
+                        }
+                        /* Code for Blackhole Attack Simulation ends here */
                         SendReplyByIntermediateNode(toDst, toOrigin, rreqHeader.GetGratuitousRrep());
                         return;
                     }
@@ -1334,6 +1315,11 @@ namespace ns3 {
             /* If the node we received a RREQ for is a neighbor we are
              * probably facing a unidirectional link... Better request a RREP-ack
              */
+            ///Attract node to set up path through malicious node
+            if (IsMalicious) //Shalini Satre
+            {
+                rrepHeader.SetHopCount(1);
+            }
             if (toDst.GetHop() == 1) {
                 rrepHeader.SetAckRequired(true);
                 RoutingTableEntry toNextHop;
@@ -1375,6 +1361,8 @@ namespace ns3 {
                 NS_LOG_LOGIC("Send gratuitous RREP " << packet->GetUid());
                 socket->SendTo(packetToDst, 0, InetSocketAddress(toDst.GetNextHop(), AODV_PORT));
             }
+            if (toOrigin.GetHop() == 1)
+                RoutingProtocol::SendVerify(toOrigin.GetNextHop(), toDst.GetDestination());
         }
 
         void
@@ -1393,6 +1381,72 @@ namespace ns3 {
             Ptr<Socket> socket = FindSocketWithInterfaceAddress(toNeighbor.GetInterface());
             NS_ASSERT(socket);
             socket->SendTo(packet, 0, InetSocketAddress(neighbor, AODV_PORT));
+        }
+
+        void
+        RoutingProtocol::SendVerify(Ipv4Address neighbor, Ipv4Address dst) {
+            NS_LOG_FUNCTION(this << " to " << dst);
+            VerifyHeader h;
+            h.SetOrig(neighbor);
+            TypeHeader typeHeader(AODVTYPE_VERIFY);
+
+            Ptr<Packet> packet = Create<Packet> ();
+            RoutingTableEntry toDst;
+            m_routingTable.LookupRoute(dst, toDst);
+            SocketIpTtlTag tag;
+            tag.SetTtl(toDst.GetHop());
+            packet->AddPacketTag(tag);
+            packet->AddHeader(h);
+            packet->AddHeader(typeHeader);
+
+            NS_LOG_UNCOND("Sending Verify packet to " << dst << " from " << this);
+            Ptr<Socket> socket = FindSocketWithInterfaceAddress(toDst.GetInterface());
+            if (socket != 0)
+                socket->SendTo(packet, 0, InetSocketAddress(dst, AODV_PORT));
+        }
+
+        void
+        RoutingProtocol::SendCheckVrf(Ipv4Address dst) {
+            NS_LOG_FUNCTION(this << " to " << dst);
+            CheckVrfHeader h;
+            TypeHeader typeHeader(AODVTYPE_CHECKVRF);
+
+            Ptr<Packet> packet = Create<Packet> ();
+            RoutingTableEntry toDst;
+            m_routingTable.LookupRoute(dst, toDst);
+
+            SocketIpTtlTag tag;
+            tag.SetTtl(toDst.GetHop());
+            packet->AddPacketTag(tag);
+            packet->AddHeader(h);
+            packet->AddHeader(typeHeader);
+
+            NS_LOG_UNCOND("Sending CheckVerify packet to " << dst);
+            Ptr<Socket> socket = FindSocketWithInterfaceAddress(toDst.GetInterface());
+            NS_ASSERT(socket);
+            socket->SendTo(packet, 0, InetSocketAddress(dst, AODV_PORT));
+        }
+
+        void
+        RoutingProtocol::SendFinalReply(Ipv4Address dst) {
+            NS_LOG_FUNCTION(this << " to " << dst);
+            FinalReplyHeader h;
+            TypeHeader typeHeader(AODVTYPE_FINALREPLY);
+
+            Ptr<Packet> packet = Create<Packet> ();
+            RoutingTableEntry toDst;
+            m_routingTable.LookupRoute(dst, toDst);
+
+            SocketIpTtlTag tag;
+            tag.SetTtl(toDst.GetHop());
+            packet->AddPacketTag(tag);
+            packet->AddHeader(h);
+            packet->AddHeader(typeHeader);
+
+            NS_LOG_UNCOND("Sending Final Reply packet to " << dst);
+            Ptr<Socket> socket = FindSocketWithInterfaceAddress(toDst.GetInterface());
+            NS_ASSERT(socket);
+            socket->SendTo(packet, 0, InetSocketAddress(dst, AODV_PORT));
         }
 
         void
@@ -1457,59 +1511,55 @@ namespace ns3 {
                 rrepHeader.SetAckRequired(false);
             }
             NS_LOG_LOGIC("receiver " << receiver << " origin " << rrepHeader.GetOrigin());
-            if (IsMyOwnAddress(rrepHeader.GetOrigin())) {
-                if (toDst.GetFlag() == IN_SEARCH) {
-                    m_routingTable.Update(newEntry);
-                    m_addressReqTimer[dst].Remove();
-                    m_addressReqTimer.erase(dst);
+            if (!IsMyOwnAddress(rrepHeader.GetDst())) {
+
+                RoutingTableEntry toOrigin;
+                if (!m_routingTable.LookupRoute(rrepHeader.GetOrigin(), toOrigin) || toOrigin.GetFlag() == IN_SEARCH) {
+                    return; // Impossible! drop.
                 }
-                m_routingTable.LookupRoute(dst, toDst);
-                SendPacketFromQueue(dst, toDst.GetRoute());
-                return;
-            }
-
-            RoutingTableEntry toOrigin;
-            if (!m_routingTable.LookupRoute(rrepHeader.GetOrigin(), toOrigin) || toOrigin.GetFlag() == IN_SEARCH) {
-                return; // Impossible! drop.
-            }
-            toOrigin.SetLifeTime(std::max(m_activeRouteTimeout, toOrigin.GetLifeTime()));
-            m_routingTable.Update(toOrigin);
-
-            // Update information about precursors
-            if (m_routingTable.LookupValidRoute(rrepHeader.GetDst(), toDst)) {
-                toDst.InsertPrecursor(toOrigin.GetNextHop());
-                m_routingTable.Update(toDst);
-
-                RoutingTableEntry toNextHopToDst;
-                m_routingTable.LookupRoute(toDst.GetNextHop(), toNextHopToDst);
-                toNextHopToDst.InsertPrecursor(toOrigin.GetNextHop());
-                m_routingTable.Update(toNextHopToDst);
-
-                toOrigin.InsertPrecursor(toDst.GetNextHop());
+                toOrigin.SetLifeTime(std::max(m_activeRouteTimeout, toOrigin.GetLifeTime()));
                 m_routingTable.Update(toOrigin);
 
-                RoutingTableEntry toNextHopToOrigin;
-                m_routingTable.LookupRoute(toOrigin.GetNextHop(), toNextHopToOrigin);
-                toNextHopToOrigin.InsertPrecursor(toDst.GetNextHop());
-                m_routingTable.Update(toNextHopToOrigin);
-            }
-            SocketIpTtlTag tag;
-            p->RemovePacketTag(tag);
-            if (tag.GetTtl() < 2) {
-                NS_LOG_DEBUG("TTL exceeded. Drop RREP destination " << dst << " origin " << rrepHeader.GetOrigin());
-                return;
-            }
+                // Update information about precursors
+                if (m_routingTable.LookupValidRoute(rrepHeader.GetDst(), toDst)) {
+                    toDst.InsertPrecursor(toOrigin.GetNextHop());
+                    m_routingTable.Update(toDst);
 
-            Ptr<Packet> packet = Create<Packet> ();
-            SocketIpTtlTag ttl;
-            ttl.SetTtl(tag.GetTtl() - 1);
-            packet->AddPacketTag(ttl);
-            packet->AddHeader(rrepHeader);
-            TypeHeader tHeader(AODVTYPE_RREP);
-            packet->AddHeader(tHeader);
-            Ptr<Socket> socket = FindSocketWithInterfaceAddress(toOrigin.GetInterface());
-            NS_ASSERT(socket);
-            socket->SendTo(packet, 0, InetSocketAddress(toOrigin.GetNextHop(), AODV_PORT));
+                    RoutingTableEntry toNextHopToDst;
+                    m_routingTable.LookupRoute(toDst.GetNextHop(), toNextHopToDst);
+                    toNextHopToDst.InsertPrecursor(toOrigin.GetNextHop());
+                    m_routingTable.Update(toNextHopToDst);
+
+                    toOrigin.InsertPrecursor(toDst.GetNextHop());
+                    m_routingTable.Update(toOrigin);
+
+                    RoutingTableEntry toNextHopToOrigin;
+                    m_routingTable.LookupRoute(toOrigin.GetNextHop(), toNextHopToOrigin);
+                    toNextHopToOrigin.InsertPrecursor(toDst.GetNextHop());
+                    m_routingTable.Update(toNextHopToOrigin);
+                }
+                SocketIpTtlTag tag;
+                p->RemovePacketTag(tag);
+                if (tag.GetTtl() < 2) {
+                    NS_LOG_DEBUG("TTL exceeded. Drop RREP destination " << dst << " origin " << rrepHeader.GetOrigin());
+                    return;
+                }
+
+                Ptr<Packet> packet = Create<Packet> ();
+                SocketIpTtlTag ttl;
+                ttl.SetTtl(tag.GetTtl() - 1);
+                packet->AddPacketTag(ttl);
+                packet->AddHeader(rrepHeader);
+                TypeHeader tHeader(AODVTYPE_RREP);
+                packet->AddHeader(tHeader);
+                Ptr<Socket> socket = FindSocketWithInterfaceAddress(toOrigin.GetInterface());
+                NS_ASSERT(socket);
+                socket->SendTo(packet, 0, InetSocketAddress(toOrigin.GetNextHop(), AODV_PORT));
+
+            } else {
+                RoutingProtocol::SendCheckVrf(dst);
+                NS_LOG_UNCOND("Waiting for Final Reply for a good route");
+            }
         }
 
         void
@@ -1522,76 +1572,6 @@ namespace ns3 {
                 m_routingTable.Update(rt);
             }
         }
-
-        // Energy Enhance
-        //*************************************************************
-
-        void RoutingProtocol::RecvRevrRreq(Ptr<Packet> p, Ipv4Address receiver, Ipv4Address neighbor) {
-
-            RevrRreqHeader revrrreqHeader;
-            p->RemoveHeader(revrrreqHeader);
-            Ipv4Address dst = revrrreqHeader.GetDst();
-
-            NS_LOG_UNCOND("Recibiendo paquete RevrRreq para " << m_ipv4->GetAddress(m_ipv4->GetInterfaceForAddress(receiver), 0) << " desde >> " << neighbor);
-            NS_LOG_UNCOND("El vínculo para llegar a " << dst << " será eliminado para ahorrar energía");
-
-            NS_LOG_FUNCTION(this);
-
-            std::map<Ipv4Address, uint32_t> dstWithNextHopSrc;
-            std::map<Ipv4Address, uint32_t> unreachable;
-            m_routingTable.GetListOfDestinationWithNextHop(neighbor, dstWithNextHopSrc);
-
-
-            for (std::map<Ipv4Address, uint32_t>::const_iterator i =
-                    dstWithNextHopSrc.begin(); i != dstWithNextHopSrc.end(); ++i) {
-                NS_LOG_UNCOND("Eliminando ruta hacia " << i->first << " a través de " << neighbor);
-                if (i->first != neighbor) {
-                    //                    NS_LOG_UNCOND("Send new RREQ para reencontrar ruta hacia " << i->first);
-                    NS_LOG_LOGIC("Unreachable insert " << i->first << " " << i->second);
-                    unreachable.insert(std::make_pair(i->first, i->second));
-                    //                    
-                }
-            }
-            m_routingTable.InvalidateRoutesWithDst(unreachable);
-
-            NS_LOG_UNCOND("Re-sending RREQ to get " << dst);
-            SendRequest(dst);
-        }
-
-        void
-        RoutingProtocol::SendRevrRreq(Ipv4Address neighbor, Ipv4Address dst) {
-            NS_LOG_FUNCTION(this << " to " << neighbor);
-
-            NS_LOG_UNCOND("El nodo " << m_ipv4->GetObject<Node>()->GetId() <<
-                    " tiene poca energía por lo que luego de reenviar el paquete pedirá a " << neighbor <<
-                    " que encuentre otra ruta para llegar a " << dst);
-
-            RevrRreqHeader revrrreqHeader;
-            revrrreqHeader.SetDst(dst);
-
-            TypeHeader typeHeader(AODVTYPE_REVR_RREQ);
-            Ptr<Packet> packet = Create<Packet> ();
-            SocketIpTtlTag tag;
-            tag.SetTtl(1);
-            packet->AddPacketTag(tag);
-            packet->AddHeader(revrrreqHeader);
-            packet->AddHeader(typeHeader);
-            RoutingTableEntry toNeighbor;
-            m_routingTable.LookupRoute(neighbor, toNeighbor);
-            Ptr<Socket> socket = FindSocketWithInterfaceAddress(toNeighbor.GetInterface());
-            if (socket) {
-                // socket->SendTo(packet, 0, InetSocketAddress(neighbor, AODV_PORT));
-                Time jitter = Time(MilliSeconds(m_uniformRandomVariable->GetInteger(0, 10)));
-                Simulator::Schedule(jitter, &RoutingProtocol::SendTo, this, socket, packet, neighbor);
-
-                NS_LOG_UNCOND("Marcando link a " << neighbor << " unidireccional para no recibir sus paquetes RREQ");
-                NS_LOG_UNCOND("Timeout para blacklist " << this->m_blackListTimeout.GetSeconds());
-                m_routingTable.MarkLinkAsUnidirectional(neighbor, this->m_blackListTimeout);
-            } else NS_LOG_UNCOND("No se pudo enviar RevrReq");
-
-
-        }
-        //*************************************************************
 
         void
         RoutingProtocol::ProcessHello(RrepHeader const & rrepHeader, Ipv4Address receiver) {
@@ -1673,6 +1653,74 @@ namespace ns3 {
                 SendRerrMessage(packet, precursors);
             }
             m_routingTable.InvalidateRoutesWithDst(unreachable);
+        }
+
+        void
+        RoutingProtocol::RecvVerify(Ptr<Packet> p, Ipv4Address src) {
+            VerifyHeader verifyHeader;
+            p->RemoveHeader(verifyHeader);
+            Ipv4Address id = verifyHeader.GetOrig();
+
+            if (!RoutingProtocol::LookupVectorEntry(id)) {
+                m_verifysVector.push_back(id);
+                NS_LOG_UNCOND("I just save a verify from " << src << " about source " << verifyHeader.GetOrig());
+            }
+        }
+
+        bool
+        RoutingProtocol::LookupVectorEntry(Ipv4Address id) {
+            NS_LOG_FUNCTION(this << id);
+            for (std::vector<Ipv4Address>::const_iterator i = m_verifysVector.begin(); i
+                    != m_verifysVector.end(); ++i) {
+                if (*i == id) {
+                    NS_LOG_LOGIC("Verify entry " << id << " found");
+                    return true;
+                }
+            }
+            NS_LOG_LOGIC("Verify entry  " << id << " not found");
+            return false;
+        }
+
+        void
+        RoutingProtocol::DeleteVectorEntry(Ipv4Address id) {
+            NS_LOG_FUNCTION(this << id);
+            std::vector<Ipv4Address>::iterator i = std::remove(m_verifysVector.begin(),
+                    m_verifysVector.end(), id);
+            if (i == m_verifysVector.end()) {
+                NS_LOG_LOGIC("Vector entry " << id << " not found");
+
+            } else {
+                NS_LOG_LOGIC("Vector entry " << id << " found");
+                m_verifysVector.erase(i, m_verifysVector.end());
+            }
+
+        }
+
+        void
+        RoutingProtocol::RecvCheckVrf(Ipv4Address src) {
+            NS_LOG_UNCOND("I just save a check verify from " << src);
+            if (RoutingProtocol::LookupVectorEntry(src)) {
+                NS_LOG_UNCOND("I can send a Final Reply");
+                RoutingProtocol::SendFinalReply(src);
+                RoutingProtocol::DeleteVectorEntry(src);
+            } else NS_LOG_UNCOND("I cannot send a Final Reply");
+        }
+
+        void
+        RoutingProtocol::RecvFinalReply(Ipv4Address src) {
+            NS_LOG_UNCOND("Catching Final Reply from " << src);
+            RoutingTableEntry toDst;
+            if (m_routingTable.LookupRoute(src, toDst)) {
+                if (toDst.GetFlag() == IN_SEARCH) {
+                    toDst.m_ackTimer.Cancel();
+                    toDst.SetFlag(VALID);
+                    m_routingTable.Update(toDst);
+                    m_addressReqTimer[src].Remove();
+                    m_addressReqTimer.erase(src);
+                }
+                SendPacketFromQueue(src, toDst.GetRoute());
+            }
+            return;
         }
 
         void

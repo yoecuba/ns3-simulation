@@ -47,9 +47,12 @@ namespace ns3 {
             AODVTYPE_RREP = 2, //!< AODVTYPE_RREP
             AODVTYPE_RERR = 3, //!< AODVTYPE_RERR
             AODVTYPE_RREP_ACK = 4, //!< AODVTYPE_RREP_ACK
-            //*******************************
-            AODVTYPE_REVR_RREQ = 5 //!< AODVTYPE_REVR_RREQ
-            //*******************************
+            //*************************************
+            AODVTYPE_VERIFY = 5, //!< AODVTYPE_VERIFY
+            AODVTYPE_CHECKVRF = 6, //!< AODVTYPE_CHECKVRF
+            AODVTYPE_FINALREPLY = 7 //!< AODVTYPE_FINALREPLY
+            //*************************************
+
         };
 
         /**
@@ -496,7 +499,6 @@ namespace ns3 {
           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
           |     Type      |   Reserved    |
           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-         * 
           \endverbatim
          */
         class RrepAckHeader : public Header {
@@ -627,7 +629,7 @@ namespace ns3 {
 
         /**
          * \ingroup aodv
-         * \brief Route Revr Process (RevrRreq) Message Format
+         * \brief Route Verify Process (Verify) Message Format
           \verbatim
           0                   1
           0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
@@ -635,34 +637,33 @@ namespace ns3 {
           |     Type      |   Reserved    |
           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-          |                     Destination IP address                    |
+          |                    Asking source IP address                    |
           +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
           \endverbatim
          */
-        class RevrRreqHeader : public Header {
+        class VerifyHeader : public Header {
         public:
             /**
              * constructor
              *
              * \param dst the destination IP address where the RREQ packet should be send
              */
-            RevrRreqHeader();
-            
-            
+            VerifyHeader();
+
             /**
              * \brief Set the destination address
              * \param a the destination address
              */
-            void SetDst(Ipv4Address a) {
-                m_dst = a;
+            void SetOrig(Ipv4Address a) {
+                m_orig = a;
             }
 
             /**
              * \brief Get the destination address
              * \return the destination address
              */
-            Ipv4Address GetDst() const {
-                return m_dst;
+            Ipv4Address GetOrig() const {
+                return m_orig;
             }
 
             /**
@@ -678,13 +679,13 @@ namespace ns3 {
 
             /**
              * \brief Comparison operator
-             * \param o Revr_Rreq header to compare
-             * \return true if the RevrRreq headers are equal
+             * \param o Verify header to compare
+             * \return true if the Verify headers are equal
              */
-            bool operator==(RevrRreqHeader const & o) const;
+            bool operator==(VerifyHeader const & o) const;
         private:
             uint8_t m_reserved; ///< Not used (must be 0)
-            Ipv4Address m_dst; ///< Destination IP Address
+            Ipv4Address m_orig; ///< Destination IP Address
         };
 
         /**
@@ -692,9 +693,111 @@ namespace ns3 {
          * \param os output stream
          * \return updated stream
          */
-        std::ostream & operator<<(std::ostream & os, RevrRreqHeader const &);
+        std::ostream & operator<<(std::ostream & os, VerifyHeader const &);
+        //**************************************************
         //**************************************************
 
+        /**
+         * \ingroup aodv
+         * \brief Route CHECKVRF Process (CheckVrf) Message Format
+          \verbatim
+          0                   1
+          0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
+          +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+          |     Type      |   Reserved    |
+          +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+          \endverbatim
+         */
+        class CheckVrfHeader : public Header {
+        public:
+            /**
+             * constructor
+             *
+             * \param dst the destination IP address where the RREQ packet should be send
+             */
+            CheckVrfHeader();
+
+
+            /**
+             * \brief Get the type ID.
+             * \return the object TypeId
+             */
+            static TypeId GetTypeId();
+            TypeId GetInstanceTypeId() const;
+            uint32_t GetSerializedSize() const;
+            void Serialize(Buffer::Iterator start) const;
+            uint32_t Deserialize(Buffer::Iterator start);
+            void Print(std::ostream &os) const;
+
+            /**
+             * \brief Comparison operator
+             * \param o CheckVrf header to compare
+             * \return true if the CheckVrf headers are equal
+             */
+            bool operator==(CheckVrfHeader const & o) const;
+        private:
+            uint8_t m_reserved; ///< Not used (must be 0)
+        };
+
+        /**
+         * \brief Stream output operator
+         * \param os output stream
+         * \return updated stream
+         */
+        std::ostream & operator<<(std::ostream & os, CheckVrfHeader const &);
+        //**************************************************
+
+        //**************************************************
+
+        /**
+         * \ingroup aodv
+         * \brief Route FINALREPLY Process (FinalReply) Message Format
+          \verbatim
+          0                   1
+          0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
+          +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+          |     Type      |   Reserved    |
+          +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+          \endverbatim
+         */
+        class FinalReplyHeader : public Header {
+        public:
+            /**
+             * constructor
+             *
+             * \param dst the destination IP address where the RREQ packet should be send
+             */
+            FinalReplyHeader();
+
+
+            /**
+             * \brief Get the type ID.
+             * \return the object TypeId
+             */
+            static TypeId GetTypeId();
+            TypeId GetInstanceTypeId() const;
+            uint32_t GetSerializedSize() const;
+            void Serialize(Buffer::Iterator start) const;
+            uint32_t Deserialize(Buffer::Iterator start);
+            void Print(std::ostream &os) const;
+
+            /**
+             * \brief Comparison operator
+             * \param o FinalReply header to compare
+             * \return true if the FinalReply headers are equal
+             */
+            bool operator==(FinalReplyHeader const & o) const;
+        private:
+            uint8_t m_reserved; ///< Not used (must be 0)
+        };
+
+        /**
+         * \brief Stream output operator
+         * \param os output stream
+         * \return updated stream
+         */
+        std::ostream & operator<<(std::ostream & os, FinalReplyHeader const &);
+        //**************************************************
 
     } // namespace aodv
 } // namespace ns3

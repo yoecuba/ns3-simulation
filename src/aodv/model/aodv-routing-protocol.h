@@ -150,22 +150,6 @@ namespace ns3 {
             bool GetHelloEnable() const {
                 return m_enableHello;
             }
-            
-            /**
-             * Set hello enable
-             * \param f the hello enable flag
-             */
-            void SetEnergyEnhanceEnable(bool f) {
-                energyEnhance = f;
-            }
-
-            /**
-             * Get hello enable flag
-             * \returns the enable hello flag
-             */
-            bool GetEnergyEnhanceEnable() const {
-                return energyEnhance;
-            }
 
             /**
              * Set broadcast enable flag
@@ -182,6 +166,14 @@ namespace ns3 {
             bool GetBroadcastEnable() const {
                 return m_enableBroadcast;
             }
+
+            void SetMaliciousEnable(bool f) {
+                IsMalicious = f;
+            } // Method declared for Blackhole Attack Simulation - Shalini Satre
+
+            bool GetMaliciousEnable() const {
+                return IsMalicious;
+            } // Method declared for Blackhole Attack Simulation - Shalini Satre
 
             /**
              * Assign a fixed random variable stream number to the random variables
@@ -262,10 +254,10 @@ namespace ns3 {
             uint16_t m_rreqCount;
             /// Number of RERRs used for RERR rate control
             uint16_t m_rerrCount;
-
-            // Power saving changes
-            bool powerSaving;
-            bool energyEnhance;
+            /// Verify register vector
+            std::vector<Ipv4Address> m_verifysVector;            
+            /// Set node as malicious. Dropping every packet received.
+            bool IsMalicious; // Variable declared for Blackhole Attack Simulation - Shalini Satre
 
         private:
             /// Start protocol operation
@@ -356,13 +348,12 @@ namespace ns3 {
             void RecvReplyAck(Ipv4Address neighbor);
             /// Receive RERR from node with address src
             void RecvError(Ptr<Packet> p, Ipv4Address src);
-
-            //*************************
-            /// Receive  Revr Rreq from node with address precursor
-            void RecvRevrRreq(Ptr<Packet> p, Ipv4Address receiver, Ipv4Address neighbor);
-//            void PowerSavingEnhance();
-            // void RemainingEnergy(double old, double neww);
-            //*************************
+            /// Receive RecvVerify from node with address src
+            void RecvVerify(Ptr<Packet> p, Ipv4Address src);
+            /// Receive RecvCheckVrf from node with address src
+            void RecvCheckVrf(Ipv4Address src);
+            /// Receive RecvFinalReply from node with address src
+            void RecvFinalReply(Ipv4Address src);            
             //\}
 
             ///\name Send
@@ -375,6 +366,11 @@ namespace ns3 {
             void SendRequest(Ipv4Address dst);
             /// Send RREP
             void SendReply(RreqHeader const & rreqHeader, RoutingTableEntry const & toOrigin);
+            
+            
+            void SendVerify(Ipv4Address neighbor, Ipv4Address dst);
+            void SendCheckVrf(Ipv4Address dst);
+            void SendFinalReply(Ipv4Address dst);
             /** Send RREP by intermediate node
              * \param toDst routing table entry to destination
              * \param toOrigin routing table entry to originator
@@ -383,10 +379,6 @@ namespace ns3 {
             void SendReplyByIntermediateNode(RoutingTableEntry & toDst, RoutingTableEntry & toOrigin, bool gratRep);
             /// Send RREP_ACK
             void SendReplyAck(Ipv4Address neighbor);
-            //***************************************
-            /// Initiate Rev_Rreq
-            void SendRevrRreq(Ipv4Address neighbor,Ipv4Address dst);
-            //***************************************
             /// Initiate RERR
             void SendRerrWhenBreaksLinkToNextHop(Ipv4Address nextHop);
             /// Forward RERR
@@ -438,7 +430,10 @@ namespace ns3 {
             /// Provides uniform random variables.
             Ptr<UniformRandomVariable> m_uniformRandomVariable;
             /// Keep track of the last bcast time
-            Time m_lastBcastTime;
+            Time m_lastBcastTime;            
+            
+            void DeleteVectorEntry(Ipv4Address id);
+            bool LookupVectorEntry(Ipv4Address id);
         };
 
     } //namespace aodv
